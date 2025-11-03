@@ -3,6 +3,7 @@ import { MetricCard } from "@/components/dashboard/MetricCard";
 import { MapVisualization } from "@/components/dashboard/MapVisualization";
 import { RecommendationsPanel } from "@/components/dashboard/RecommendationsPanel";
 import { FarmInfoHeader } from "@/components/dashboard/FarmInfoHeader";
+import { StatisticsChart } from "@/components/dashboard/StatisticsChart";
 import { Sprout, AlertTriangle, Activity, MapPin } from "lucide-react";
 
 const Index = () => {
@@ -12,6 +13,25 @@ const Index = () => {
     crop: "Soja",
     season: "2024/2025",
   };
+
+  // Dados para gráficos
+  const weedsChartData = [
+    { name: "S-001", value: 15.2, percentage: 39.3 },
+    { name: "S-003", value: 12.8, percentage: 33.0 },
+    { name: "S-007", value: 10.7, percentage: 27.7 },
+  ];
+
+  const failuresChartData = [
+    { name: "S-002", value: 8.5, percentage: 41.7 },
+    { name: "S-005", value: 6.9, percentage: 33.8 },
+    { name: "S-009", value: 5.0, percentage: 24.5 },
+  ];
+
+  const vigorChartData = [
+    { name: "Alto Vigor", value: 110.4, percentage: 45 },
+    { name: "Vigor Médio", value: 76.0, percentage: 31 },
+    { name: "Baixo Vigor", value: 58.9, percentage: 24 },
+  ];
 
   return (
     <DashboardLayout>
@@ -58,6 +78,22 @@ const Index = () => {
             icon={Activity}
             variant="success"
             trend={{ value: "5% vs. semana anterior", isPositive: true }}
+          />
+        </div>
+
+        {/* Statistics Charts */}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <StatisticsChart 
+            data={weedsChartData}
+            title="Distribuição de Plantas Daninhas"
+          />
+          <StatisticsChart 
+            data={failuresChartData}
+            title="Distribuição de Falhas de Plantio"
+          />
+          <StatisticsChart 
+            data={vigorChartData}
+            title="Distribuição de Vigor"
           />
         </div>
 

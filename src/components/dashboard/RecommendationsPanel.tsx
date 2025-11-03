@@ -1,6 +1,8 @@
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AlertCircle, CheckCircle2, Info } from "lucide-react";
+import { ConsultantChatbot } from "./ConsultantChatbot";
+import { Separator } from "@/components/ui/separator";
 
 interface Recommendation {
   id: string;
@@ -35,6 +37,16 @@ const mockRecommendations: Recommendation[] = [
 ];
 
 export const RecommendationsPanel = () => {
+  const observationsText = `Após a análise detalhada realizada pela inteligência artificial da sensoriAI, foram observados os seguintes problemas na lavoura:
+
+• **Infestação por Plantas Daninhas**: Detectada presença significativa de plantas daninhas em 15.8% da área total (38.7 hectares), com concentração maior nos setores S-001, S-003 e S-007. A infestação apresenta tendência de crescimento de 2.3% em relação ao mês anterior, indicando necessidade de intervenção imediata.
+
+• **Falhas de Plantio Críticas**: Identificadas falhas de plantio em 8.3% da propriedade (20.4 hectares), distribuídas principalmente nos setores S-002, S-005 e S-009. Essas falhas comprometem a densidade ideal de plantas por metro quadrado e podem impactar significativamente a produtividade esperada para a safra.
+
+• **Variação no Vigor Vegetativo**: Mapeamento de vigor mostra distribuição desigual, com 45% da área em alto vigor, 31% em vigor médio e 24% em baixo vigor. As áreas de baixo vigor necessitam atenção especial, podendo indicar problemas nutricionais, compactação do solo ou deficiência hídrica.
+
+• **Georreferenciamento Completo**: Todos os 245.3 hectares foram mapeados com precisão, permitindo intervenções localizadas e otimização no uso de insumos agrícolas.`;
+
   const getPriorityIcon = (priority: string) => {
     switch (priority) {
       case "high":
@@ -62,34 +74,63 @@ export const RecommendationsPanel = () => {
   };
 
   return (
-    <Card className="col-span-full">
-      <CardHeader>
-        <CardTitle>Recomendações e Observações</CardTitle>
-        <CardDescription>
-          Análises e sugestões baseadas nos dados coletados
-        </CardDescription>
-      </CardHeader>
-      <CardContent className="space-y-4">
-        {mockRecommendations.map((rec) => (
-          <div
-            key={rec.id}
-            className="p-4 rounded-lg border border-border bg-card hover:shadow-md transition-shadow"
-          >
-            <div className="flex items-start gap-3">
-              <div className="mt-0.5">{getPriorityIcon(rec.priority)}</div>
-              <div className="flex-1 space-y-2">
-                <div className="flex items-center gap-2">
-                  <h4 className="font-semibold text-foreground">{rec.title}</h4>
-                  <Badge variant={getPriorityColor(rec.priority) as any}>
-                    {rec.category}
-                  </Badge>
-                </div>
-                <p className="text-sm text-muted-foreground">{rec.description}</p>
-              </div>
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="lg:col-span-2 space-y-6">
+        {/* Observações */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Observações da Análise</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="prose prose-sm max-w-none">
+              <p className="text-foreground whitespace-pre-line leading-relaxed">
+                {observationsText}
+              </p>
             </div>
-          </div>
-        ))}
-      </CardContent>
-    </Card>
+          </CardContent>
+        </Card>
+
+        <Separator />
+
+        {/* Recomendações */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Recomendações Agronômicas Prioritárias</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              {mockRecommendations.map((recommendation) => (
+                <div
+                  key={recommendation.id}
+                  className="flex gap-4 p-4 border border-border rounded-lg hover:bg-muted/50 transition-colors"
+                >
+                  <div className="flex-shrink-0">
+                    {getPriorityIcon(recommendation.priority)}
+                  </div>
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-start justify-between gap-4">
+                      <h3 className="font-semibold text-foreground">
+                        {recommendation.title}
+                      </h3>
+                      <Badge variant="outline" className="flex-shrink-0">
+                        {recommendation.category}
+                      </Badge>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      {recommendation.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Chatbot */}
+      <div className="lg:col-span-1">
+        <ConsultantChatbot />
+      </div>
+    </div>
   );
 };
