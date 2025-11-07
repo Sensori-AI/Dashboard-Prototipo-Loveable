@@ -82,18 +82,18 @@ const Index = () => {
         </div>
 
         {/* Statistics Charts */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 grid-cols-1 lg:grid-cols-3">
           <StatisticsChart 
             data={weedsChartData}
-            title="Distribuição de Plantas Daninhas"
+            title="Evolução de Plantas Daninhas"
           />
           <StatisticsChart 
             data={failuresChartData}
-            title="Distribuição de Falhas de Plantio"
+            title="Evolução de Falhas de Plantio"
           />
           <StatisticsChart 
             data={vigorChartData}
-            title="Distribuição de Vigor"
+            title="Evolução de Vigor"
           />
         </div>
 

@@ -1,9 +1,18 @@
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { SectorList, Sector } from "./SectorList";
+import { SectorList } from "./SectorList";
 import { GeographicMap } from "./GeographicMap";
 import { toast } from "sonner";
+
+interface Sector {
+  id: string;
+  name: string;
+  area: number;
+  infestationLevel: "high" | "medium" | "low";
+  percentage: number;
+  coordinates: { lat: number; lng: number };
+}
 
 // Coordenadas centrais da propriedade (mock - região de soja no Brasil)
 const farmCenter = { lat: -23.5505, lng: -46.6333 };

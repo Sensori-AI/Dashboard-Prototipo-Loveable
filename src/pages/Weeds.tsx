@@ -6,7 +6,15 @@ import { StatisticsChart } from "@/components/dashboard/StatisticsChart";
 import { Badge } from "@/components/ui/badge";
 import { AlertCircle } from "lucide-react";
 import { useState } from "react";
-import { Sector } from "@/components/dashboard/SectorList";
+
+interface Sector {
+  id: string;
+  name: string;
+  area: number;
+  infestationLevel: "high" | "medium" | "low";
+  percentage: number;
+  coordinates: { lat: number; lng: number };
+}
 
 const mockWeedPolygons = [
   {
@@ -40,9 +48,9 @@ const mockWeedSectors: Sector[] = [
 ];
 
 const weedsChartData = [
-  { name: "Alta", value: 45.3, fill: "hsl(var(--chart-1))" },
-  { name: "Média", value: 32.1, fill: "hsl(var(--chart-2))" },
-  { name: "Baixa", value: 22.6, fill: "hsl(var(--chart-3))" },
+  { name: "S-001", value: 12.5, percentage: 32.5 },
+  { name: "S-003", value: 8.3, percentage: 18.2 },
+  { name: "S-007", value: 15.7, percentage: 28.9 },
 ];
 
 const Weeds = () => {

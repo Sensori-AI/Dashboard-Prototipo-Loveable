@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 interface StatisticsChartProps {
   data: Array<{
@@ -18,7 +18,7 @@ export const StatisticsChart = ({ data, title }: StatisticsChartProps) => {
       </CardHeader>
       <CardContent>
         <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={data}>
+          <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
             <XAxis 
               dataKey="name" 
@@ -37,19 +37,25 @@ export const StatisticsChart = ({ data, title }: StatisticsChartProps) => {
               }}
             />
             <Legend />
-            <Bar 
+            <Line 
+              type="monotone"
               dataKey="value" 
-              fill="hsl(var(--primary))" 
+              stroke="hsl(var(--primary))" 
+              strokeWidth={3}
               name="Área (ha)"
-              radius={[8, 8, 0, 0]}
+              dot={{ fill: 'hsl(var(--primary))', r: 5 }}
+              activeDot={{ r: 7 }}
             />
-            <Bar 
+            <Line 
+              type="monotone"
               dataKey="percentage" 
-              fill="hsl(var(--secondary))" 
+              stroke="hsl(var(--secondary))" 
+              strokeWidth={3}
               name="Porcentagem (%)"
-              radius={[8, 8, 0, 0]}
+              dot={{ fill: 'hsl(var(--secondary))', r: 5 }}
+              activeDot={{ r: 7 }}
             />
-          </BarChart>
+          </LineChart>
         </ResponsiveContainer>
       </CardContent>
     </Card>

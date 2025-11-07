@@ -5,7 +5,15 @@ import { StatisticsChart } from "@/components/dashboard/StatisticsChart";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp } from "lucide-react";
 import { useState } from "react";
-import { Sector } from "@/components/dashboard/SectorList";
+
+interface Sector {
+  id: string;
+  name: string;
+  area: number;
+  infestationLevel: "high" | "medium" | "low";
+  percentage: number;
+  coordinates: { lat: number; lng: number };
+}
 
 const mockVigorSectors: Sector[] = [
   { id: "v1", name: "Setor F-1", area: 18.3, infestationLevel: "high", percentage: 82.5, coordinates: { lat: -23.5505, lng: -46.6333 } },
@@ -16,9 +24,11 @@ const mockVigorSectors: Sector[] = [
 ];
 
 const vigorChartData = [
-  { name: "Alto", value: 52.8, fill: "hsl(var(--chart-1))" },
-  { name: "Médio", value: 31.5, fill: "hsl(var(--chart-2))" },
-  { name: "Baixo", value: 15.7, fill: "hsl(var(--chart-3))" },
+  { name: "F-1", value: 18.3, percentage: 82.5 },
+  { name: "F-2", value: 14.7, percentage: 65.3 },
+  { name: "G-1", value: 9.2, percentage: 42.8 },
+  { name: "G-2", value: 16.5, percentage: 78.9 },
+  { name: "H-1", value: 12.1, percentage: 58.4 },
 ];
 
 const Vigor = () => {
