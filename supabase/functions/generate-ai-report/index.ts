@@ -15,9 +15,13 @@ serve(async (req) => {
     
     console.log('Generating AI report for:', { period, sectors });
 
-    // Use Lovable AI to generate intelligent report analysis
-    const lovableAIUrl = `${Deno.env.get('SUPABASE_URL')}/functions/v1/lovable-ai`;
+    // Use Lovable AI Gateway to generate intelligent report analysis
+    const lovableApiKey = Deno.env.get('LOVABLE_API_KEY');
     
+    if (!lovableApiKey) {
+      throw new Error('LOVABLE_API_KEY not configured');
+    }
+
     const prompt = `Você é um especialista em análise agrícola. Analise os seguintes dados da fazenda e gere um relatório profissional detalhado em português:
 
 Período: ${period}
@@ -38,11 +42,11 @@ Gere um relatório estruturado com:
 
 Use linguagem técnica mas acessível. Seja específico e prático nas recomendações.`;
 
-    const aiResponse = await fetch(lovableAIUrl, {
+    const aiResponse = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
       method: 'POST',
       headers: {
+        'Authorization': `Bearer ${lovableApiKey}`,
         'Content-Type': 'application/json',
-        'Authorization': req.headers.get('Authorization') || '',
       },
       body: JSON.stringify({
         model: 'google/gemini-2.5-flash',
@@ -52,13 +56,13 @@ Use linguagem técnica mas acessível. Seja específico e prático nas recomenda
             content: prompt 
           }
         ],
-        temperature: 0.7,
-        max_tokens: 2000
       }),
     });
 
     if (!aiResponse.ok) {
-      throw new Error(`Lovable AI error: ${aiResponse.statusText}`);
+      const errorText = await aiResponse.text();
+      console.error('Lovable AI Gateway error:', aiResponse.status, errorText);
+      throw new Error(`Lovable AI Gateway error: ${aiResponse.status}`);
     }
 
     const aiData = await aiResponse.json();
