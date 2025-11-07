@@ -1,1 +1,13 @@
 project_id = "dlbsuggpapvapeicmfsq"
+
+[functions.generate-ai-report]
+verify_jwt = false
+
+[functions.send-report-email]
+verify_jwt = false
+
+[functions.schedule-reports]
+verify_jwt = false
+
+[functions.lovable-ai]
+verify_jwt = false

@@ -7,7 +7,7 @@ import { MetricCard } from "@/components/dashboard/MetricCard";
 import { toast } from "sonner";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
-import { Sprout, AlertTriangle, Activity, MapPin } from "lucide-react";
+import { Sprout, AlertTriangle, Activity, MapPin, FileSpreadsheet } from "lucide-react";
 import { useState } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
@@ -23,6 +23,8 @@ import {
   DialogTrigger,
   DialogFooter,
 } from "@/components/ui/dialog";
+import { supabase } from "@/integrations/supabase/client";
+import { exportToCSV, exportToExcel, prepareReportData } from "@/utils/exportData";
 
 const Reports = () => {
   const navigate = useNavigate();
@@ -33,6 +35,8 @@ const Reports = () => {
     frequency: "weekly",
     email: "",
   });
+  const [isGeneratingReport, setIsGeneratingReport] = useState(false);
+  const [aiReport, setAiReport] = useState<any>(null);
 
   const handleDownloadPDF = async () => {
     try {
@@ -104,10 +108,93 @@ const Reports = () => {
     { name: "Baixo", value: 58.9, percentage: 24 },
   ];
 
-  const handleScheduleEmail = () => {
-    toast.info("Agendamento de relatórios por email requer Lovable Cloud", {
-      description: "Vamos configurar o backend para enviar emails automaticamente",
-    });
+  const handleGenerateAIReport = async () => {
+    setIsGeneratingReport(true);
+    try {
+      toast.loading("Gerando relatório com IA...");
+      
+      const { data, error } = await supabase.functions.invoke('generate-ai-report', {
+        body: {
+          farmData: {
+            vigor: 72,
+            falhas: 8.3,
+            daninhas: 15.8,
+            area: 245.3,
+          },
+          period: selectedPeriod === "week" ? "Última Semana" : selectedPeriod === "month" ? "Último Mês" : "Período Selecionado",
+          sectors: selectedSector === "all" ? ["S-001", "S-002", "S-003"] : [selectedSector.toUpperCase()],
+        },
+      });
+
+      if (error) throw error;
+      
+      setAiReport(data);
+      toast.dismiss();
+      toast.success("Relatório gerado com sucesso!");
+    } catch (error) {
+      console.error('Error generating report:', error);
+      toast.dismiss();
+      toast.error("Erro ao gerar relatório com IA");
+    } finally {
+      setIsGeneratingReport(false);
+    }
+  };
+
+  const handleScheduleEmail = async () => {
+    if (!emailSchedule.email) {
+      toast.error("Por favor, insira um email válido");
+      return;
+    }
+
+    try {
+      const { data, error } = await supabase.functions.invoke('schedule-reports', {
+        body: {
+          action: 'create',
+          schedule: {
+            email: emailSchedule.email,
+            frequency: emailSchedule.frequency,
+            sectors: selectedSector === "all" ? ["S-001", "S-002", "S-003"] : [selectedSector.toUpperCase()],
+          },
+        },
+      });
+
+      if (error) throw error;
+
+      toast.success("Agendamento criado com sucesso!", {
+        description: `Relatórios serão enviados ${emailSchedule.frequency === 'weekly' ? 'semanalmente' : emailSchedule.frequency === 'monthly' ? 'mensalmente' : 'quinzenalmente'}`,
+      });
+    } catch (error) {
+      console.error('Error scheduling email:', error);
+      toast.error("Erro ao agendar email. Verifique se a chave RESEND_API_KEY está configurada.");
+    }
+  };
+
+  const handleExportCSV = () => {
+    const reportData = aiReport || {
+      generated_at: new Date().toISOString(),
+      period: selectedPeriod,
+      sectors: selectedSector === "all" ? ["S-001", "S-002", "S-003"] : [selectedSector.toUpperCase()],
+      data: { vigor: 72, falhas: 8.3, daninhas: 15.8, area: 245.3 },
+      summary: { status: "Bom" },
+    };
+    
+    const csvData = prepareReportData(reportData);
+    exportToCSV(csvData, `relatorio-${new Date().toLocaleDateString('pt-BR')}`);
+    toast.success("Relatório exportado em CSV!");
+  };
+
+  const handleExportExcel = () => {
+    const reportData = aiReport || {
+      generated_at: new Date().toISOString(),
+      period: selectedPeriod,
+      sectors: selectedSector === "all" ? ["S-001", "S-002", "S-003"] : [selectedSector.toUpperCase()],
+      data: { vigor: 72, falhas: 8.3, daninhas: 15.8, area: 245.3 },
+      summary: { status: "Bom" },
+    };
+    
+    const excelData = prepareReportData(reportData);
+    exportToExcel(excelData, `relatorio-${new Date().toLocaleDateString('pt-BR')}`);
+    toast.success("Relatório exportado em Excel!");
   };
 
   return (
@@ -123,7 +210,7 @@ const Reports = () => {
               Resumo completo das análises realizadas
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+          <div className="flex flex-wrap gap-2 w-full sm:w-auto">
             <Button
               onClick={() => navigate("/reports-history")}
               variant="outline"
@@ -131,6 +218,31 @@ const Reports = () => {
             >
               <History className="h-4 w-4" />
               Histórico
+            </Button>
+            <Button
+              onClick={handleGenerateAIReport}
+              variant="outline"
+              className="gap-2"
+              disabled={isGeneratingReport}
+            >
+              <Activity className="h-4 w-4" />
+              {isGeneratingReport ? "Gerando..." : "Gerar com IA"}
+            </Button>
+            <Button
+              onClick={handleExportCSV}
+              variant="outline"
+              className="gap-2"
+            >
+              <FileSpreadsheet className="h-4 w-4" />
+              CSV
+            </Button>
+            <Button
+              onClick={handleExportExcel}
+              variant="outline"
+              className="gap-2"
+            >
+              <FileSpreadsheet className="h-4 w-4" />
+              Excel
             </Button>
             <Dialog>
               <DialogTrigger asChild>
@@ -371,41 +483,57 @@ const Reports = () => {
             </Card>
           </div>
 
-          {/* Observações e Recomendações */}
+          {/* Observações e Recomendações com IA */}
           <Card>
             <CardHeader>
-              <CardTitle>Observações da Análise por IA</CardTitle>
+              <CardTitle>Análise Profissional com IA</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div>
-                <h4 className="font-semibold text-foreground mb-2">Plantas Daninhas</h4>
-                <p className="text-sm text-muted-foreground">
-                  Após análise da IA, foram identificadas plantas daninhas em 3 setores principais da lavoura. 
-                  O Setor S-001 apresenta o maior nível de infestação (39.3% da área), seguido pelo Setor S-003 (33.0%). 
-                  As espécies predominantes incluem Buva e Capim-Amargoso, que requerem intervenção imediata 
-                  para evitar perdas de produtividade.
-                </p>
-              </div>
+              {aiReport ? (
+                <div className="prose prose-sm max-w-none">
+                  <div className="whitespace-pre-wrap text-sm text-foreground leading-relaxed">
+                    {aiReport.ai_analysis}
+                  </div>
+                </div>
+              ) : (
+                <>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Plantas Daninhas</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Após análise da IA, foram identificadas plantas daninhas em 3 setores principais da lavoura. 
+                      O Setor S-001 apresenta o maior nível de infestação (39.3% da área), seguido pelo Setor S-003 (33.0%). 
+                      As espécies predominantes incluem Buva e Capim-Amargoso, que requerem intervenção imediata 
+                      para evitar perdas de produtividade.
+                    </p>
+                  </div>
 
-              <div>
-                <h4 className="font-semibold text-foreground mb-2">Falhas de Plantio</h4>
-                <p className="text-sm text-muted-foreground">
-                  Foram detectadas falhas de plantio em 20.4 hectares (8.3% da área total). O Setor S-002 apresenta 
-                  a maior concentração de falhas (41.7%), indicando possíveis problemas na distribuição de sementes 
-                  ou na regulagem da plantadeira. Recomenda-se replantio nas áreas mais críticas e revisão do 
-                  equipamento para evitar recorrência.
-                </p>
-              </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Falhas de Plantio</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Foram detectadas falhas de plantio em 20.4 hectares (8.3% da área total). O Setor S-002 apresenta 
+                      a maior concentração de falhas (41.7%), indicando possíveis problemas na distribuição de sementes 
+                      ou na regulagem da plantadeira. Recomenda-se replantio nas áreas mais críticas e revisão do 
+                      equipamento para evitar recorrência.
+                    </p>
+                  </div>
 
-              <div>
-                <h4 className="font-semibold text-foreground mb-2">Vigor da Cultura</h4>
-                <p className="text-sm text-muted-foreground">
-                  A análise de vigor indica que 45% da área total apresenta alto desenvolvimento vegetativo, 
-                  demonstrando boa saúde das plantas. As áreas com vigor médio (31%) podem se beneficiar 
-                  de aplicação localizada de nutrientes. As zonas de baixo vigor (24%) requerem investigação 
-                  adicional para identificar possíveis deficiências nutricionais ou problemas no solo.
-                </p>
-              </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Vigor da Cultura</h4>
+                    <p className="text-sm text-muted-foreground">
+                      A análise de vigor indica que 45% da área total apresenta alto desenvolvimento vegetativo, 
+                      demonstrando boa saúde das plantas. As áreas com vigor médio (31%) podem se beneficiar 
+                      de aplicação localizada de nutrientes. As zonas de baixo vigor (24%) requerem investigação 
+                      adicional para identificar possíveis deficiências nutricionais ou problemas no solo.
+                    </p>
+                  </div>
+                  
+                  <div className="mt-4 p-4 bg-muted/50 rounded-lg border border-border">
+                    <p className="text-sm text-muted-foreground italic">
+                      💡 Clique em "Gerar com IA" para obter uma análise profissional detalhada com recomendações personalizadas
+                    </p>
+                  </div>
+                </>
+              )}
             </CardContent>
           </Card>
 
