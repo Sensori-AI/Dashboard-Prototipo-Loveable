@@ -18,8 +18,6 @@ interface GeographicMapProps {
   center: Coordinate;
 }
 
-export type { Polygon, Coordinate };
-
 export const GeographicMap = ({ polygons, selectedSectorId, center }: GeographicMapProps) => {
   // Converter coordenadas geográficas para coordenadas SVG
   const latRange = { min: center.lat - 0.01, max: center.lat + 0.01 };

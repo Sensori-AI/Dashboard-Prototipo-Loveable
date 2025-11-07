@@ -1,10 +1,11 @@
 import { DashboardLayout } from "@/components/layout/DashboardLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { SectorList, type Sector } from "@/components/dashboard/SectorList";
+import { SectorList } from "@/components/dashboard/SectorList";
 import { StatisticsChart } from "@/components/dashboard/StatisticsChart";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp } from "lucide-react";
 import { useState } from "react";
+import { Sector } from "@/components/dashboard/SectorList";
 
 const mockVigorSectors: Sector[] = [
   { id: "v1", name: "Setor F-1", area: 18.3, infestationLevel: "high", percentage: 82.5, coordinates: { lat: -23.5505, lng: -46.6333 } },
@@ -15,9 +16,9 @@ const mockVigorSectors: Sector[] = [
 ];
 
 const vigorChartData = [
-  { name: "Alto", value: 52.8, percentage: 52.8 },
-  { name: "Médio", value: 31.5, percentage: 31.5 },
-  { name: "Baixo", value: 15.7, percentage: 15.7 },
+  { name: "Alto", value: 52.8, fill: "hsl(var(--chart-1))" },
+  { name: "Médio", value: 31.5, fill: "hsl(var(--chart-2))" },
+  { name: "Baixo", value: 15.7, fill: "hsl(var(--chart-3))" },
 ];
 
 const Vigor = () => {
@@ -80,7 +81,14 @@ const Vigor = () => {
           </Card>
         </div>
 
-        <StatisticsChart data={vigorChartData} title="Níveis de Vigor" />
+        <Card>
+          <CardHeader>
+            <CardTitle>Distribuição de Vigor</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <StatisticsChart data={vigorChartData} title="Níveis de Vigor (%)" />
+          </CardContent>
+        </Card>
 
         <Card>
           <CardHeader>

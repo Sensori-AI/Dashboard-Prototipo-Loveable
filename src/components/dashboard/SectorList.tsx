@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, ZoomIn } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-interface Sector {
+export interface Sector {
   id: string;
   name: string;
   area: number;
@@ -19,8 +19,6 @@ interface SectorListProps {
   selectedSectorId?: string;
   type: "weeds" | "failures" | "vigor";
 }
-
-export type { Sector };
 
 export const SectorList = ({
   sectors,
