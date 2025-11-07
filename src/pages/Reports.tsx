@@ -7,7 +7,7 @@ import { MetricCard } from "@/components/dashboard/MetricCard";
 import { toast } from "sonner";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
-import { Sprout, AlertTriangle, Activity, MapPin, FileSpreadsheet } from "lucide-react";
+import { Sprout, AlertTriangle, Activity, MapPin, FileSpreadsheet, Mail } from "lucide-react";
 import { useState } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
@@ -146,7 +146,14 @@ const Reports = () => {
       return;
     }
 
+    if (!emailSchedule.enabled) {
+      toast.info("Ative o envio automático para criar o agendamento");
+      return;
+    }
+
     try {
+      toast.loading("Criando agendamento...");
+
       const { data, error } = await supabase.functions.invoke('schedule-reports', {
         body: {
           action: 'create',
@@ -160,12 +167,30 @@ const Reports = () => {
 
       if (error) throw error;
 
+      toast.dismiss();
       toast.success("Agendamento criado com sucesso!", {
-        description: `Relatórios serão enviados ${emailSchedule.frequency === 'weekly' ? 'semanalmente' : emailSchedule.frequency === 'monthly' ? 'mensalmente' : 'quinzenalmente'}`,
+        description: `Relatórios serão enviados ${
+          emailSchedule.frequency === 'weekly' ? 'semanalmente' : 
+          emailSchedule.frequency === 'monthly' ? 'mensalmente' : 
+          'quinzenalmente'
+        } para ${emailSchedule.email}`,
       });
-    } catch (error) {
+      
+      // Reset form
+      setEmailSchedule({ enabled: false, frequency: "weekly", email: "" });
+    } catch (error: any) {
+      toast.dismiss();
       console.error('Error scheduling email:', error);
-      toast.error("Erro ao agendar email. Verifique se a chave RESEND_API_KEY está configurada.");
+      
+      if (error.message?.includes('RESEND_API_KEY')) {
+        toast.error("Configure a chave RESEND_API_KEY", {
+          description: "Acesse as configurações do backend e adicione sua chave da API do Resend",
+        });
+      } else {
+        toast.error("Erro ao criar agendamento", {
+          description: error.message || "Tente novamente mais tarde",
+        });
+      }
     }
   };
 
@@ -197,6 +222,56 @@ const Reports = () => {
     toast.success("Relatório exportado em Excel!");
   };
 
+  const handleSendEmail = async () => {
+    if (!aiReport) {
+      toast.error("Gere um relatório com IA antes de enviar por email");
+      return;
+    }
+
+    // Dialog para coletar email
+    const email = prompt("Digite o email para envio do relatório:");
+    
+    if (!email) {
+      toast.info("Envio cancelado");
+      return;
+    }
+
+    if (!email.includes('@')) {
+      toast.error("Email inválido");
+      return;
+    }
+
+    try {
+      toast.loading("Enviando relatório por email...");
+
+      const { data, error } = await supabase.functions.invoke('send-report-email', {
+        body: {
+          email,
+          report: aiReport,
+          farmName: "Fazenda Principal",
+        },
+      });
+
+      if (error) throw error;
+
+      toast.dismiss();
+      toast.success("Relatório enviado com sucesso!", {
+        description: `Email enviado para ${email}`,
+      });
+    } catch (error: any) {
+      toast.dismiss();
+      console.error('Error sending email:', error);
+      
+      if (error.message?.includes('RESEND_API_KEY')) {
+        toast.error("Configure a chave RESEND_API_KEY nas configurações do backend");
+      } else {
+        toast.error("Erro ao enviar email", {
+          description: error.message || "Tente novamente",
+        });
+      }
+    }
+  };
+
   return (
     <DashboardLayout>
       <div className="p-4 sm:p-6">
@@ -221,12 +296,22 @@ const Reports = () => {
             </Button>
             <Button
               onClick={handleGenerateAIReport}
-              variant="outline"
+              variant="default"
               className="gap-2"
               disabled={isGeneratingReport}
             >
               <Activity className="h-4 w-4" />
               {isGeneratingReport ? "Gerando..." : "Gerar com IA"}
+            </Button>
+            <Button
+              onClick={handleSendEmail}
+              variant="outline"
+              className="gap-2"
+              disabled={!aiReport}
+              title={!aiReport ? "Gere um relatório primeiro" : "Enviar relatório por email"}
+            >
+              <Mail className="h-4 w-4" />
+              Enviar Email
             </Button>
             <Button
               onClick={handleExportCSV}
@@ -244,11 +329,15 @@ const Reports = () => {
               <FileSpreadsheet className="h-4 w-4" />
               Excel
             </Button>
+            <Button onClick={handleDownloadPDF} variant="outline" className="gap-2">
+              <Download className="h-4 w-4" />
+              PDF
+            </Button>
             <Dialog>
               <DialogTrigger asChild>
                 <Button variant="outline" className="gap-2">
                   <Clock className="h-4 w-4" />
-                  Agendar Email
+                  Agendar
                 </Button>
               </DialogTrigger>
               <DialogContent>
@@ -483,16 +572,46 @@ const Reports = () => {
             </Card>
           </div>
 
-          {/* Observações e Recomendações com IA */}
+          {/* Resumo Simplificado para o Cliente */}
+          {aiReport?.simplified_summary && (
+            <Card className="border-2 border-primary/20 bg-primary/5">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Activity className="h-5 w-5 text-primary" />
+                  📋 Resumo Simplificado (Para o Cliente)
+                </CardTitle>
+                <p className="text-sm text-muted-foreground">
+                  Linguagem acessível e direta para facilitar o entendimento
+                </p>
+              </CardHeader>
+              <CardContent>
+                <div className="prose prose-sm max-w-none">
+                  <div className="whitespace-pre-wrap text-sm text-foreground leading-relaxed bg-background p-4 rounded-lg">
+                    {aiReport.simplified_summary}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Relatório Técnico Completo */}
           <Card>
             <CardHeader>
-              <CardTitle>Análise Profissional com IA</CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                <Leaf className="h-5 w-5 text-primary" />
+                {aiReport ? '📊 Relatório Técnico Completo (Detalhado)' : 'Análise Profissional com IA'}
+              </CardTitle>
+              {aiReport && (
+                <p className="text-sm text-muted-foreground">
+                  Análise técnica detalhada para agrônomos e consultores
+                </p>
+              )}
             </CardHeader>
             <CardContent className="space-y-4">
               {aiReport ? (
                 <div className="prose prose-sm max-w-none">
                   <div className="whitespace-pre-wrap text-sm text-foreground leading-relaxed">
-                    {aiReport.ai_analysis}
+                    {aiReport.technical_report || aiReport.ai_analysis}
                   </div>
                 </div>
               ) : (
@@ -529,7 +648,7 @@ const Reports = () => {
                   
                   <div className="mt-4 p-4 bg-muted/50 rounded-lg border border-border">
                     <p className="text-sm text-muted-foreground italic">
-                      💡 Clique em "Gerar com IA" para obter uma análise profissional detalhada com recomendações personalizadas
+                      💡 Clique em &quot;Gerar com IA&quot; para obter uma análise técnica completa + resumo simplificado para o cliente
                     </p>
                   </div>
                 </>
