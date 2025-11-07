@@ -102,7 +102,12 @@ export const SectorList = ({
                     </div>
                   </div>
                   <div className="flex flex-col items-end gap-1">
-                    <Badge variant={getInfestationColor(sector.infestationLevel) as any} className="text-xs">
+                    <Badge
+                      variant={
+                        getInfestationColor(sector.infestationLevel) as any
+                      }
+                      className="text-xs"
+                    >
                       {getInfestationText(sector.infestationLevel)}
                     </Badge>
                     <ZoomIn className="h-3 w-3 text-muted-foreground" />

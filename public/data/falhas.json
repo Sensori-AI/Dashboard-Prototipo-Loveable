@@ -1,0 +1,2300 @@
+[
+  {
+    "nome": "Setor 1",
+    "coordenadas": [
+      {
+        "latitude": -24.76808712,
+        "longitude": -53.61537676
+      },
+      {
+        "latitude": -24.76808712,
+        "longitude": -53.61522121
+      },
+      {
+        "latitude": -24.76807444,
+        "longitude": -53.61522121
+      },
+      {
+        "latitude": -24.76807444,
+        "longitude": -53.61502121
+      },
+      {
+        "latitude": -24.76827444,
+        "longitude": -53.61502121
+      },
+      {
+        "latitude": -24.76827444,
+        "longitude": -53.61517676
+      },
+      {
+        "latitude": -24.76828712,
+        "longitude": -53.61517676
+      },
+      {
+        "latitude": -24.76828712,
+        "longitude": -53.61529246
+      },
+      {
+        "latitude": -24.7684401,
+        "longitude": -53.61529246
+      },
+      {
+        "latitude": -24.76843876,
+        "longitude": -53.61519209
+      },
+      {
+        "latitude": -24.76844881,
+        "longitude": -53.61519209
+      },
+      {
+        "latitude": -24.76844881,
+        "longitude": -53.61539206
+      },
+      {
+        "latitude": -24.76844855,
+        "longitude": -53.61539206
+      },
+      {
+        "latitude": -24.76844855,
+        "longitude": -53.61549246
+      },
+      {
+        "latitude": -24.76824855,
+        "longitude": -53.61549246
+      },
+      {
+        "latitude": -24.76824855,
+        "longitude": -53.61537676
+      },
+      {
+        "latitude": -24.76808712,
+        "longitude": -53.61537676
+      }
+    ]
+  },
+  {
+    "nome": "Setor 2",
+    "coordenadas": [
+      {
+        "latitude": -24.76843617,
+        "longitude": -53.61696638
+      },
+      {
+        "latitude": -24.76823617,
+        "longitude": -53.61696638
+      },
+      {
+        "latitude": -24.76823617,
+        "longitude": -53.61676638
+      },
+      {
+        "latitude": -24.76843617,
+        "longitude": -53.61676638
+      },
+      {
+        "latitude": -24.76843617,
+        "longitude": -53.61696638
+      }
+    ]
+  },
+  {
+    "nome": "Setor 3",
+    "coordenadas": [
+      {
+        "latitude": -24.76819054,
+        "longitude": -53.61718821
+      },
+      {
+        "latitude": -24.76818787,
+        "longitude": -53.61698821
+      },
+      {
+        "latitude": -24.76820863,
+        "longitude": -53.61698821
+      },
+      {
+        "latitude": -24.76820863,
+        "longitude": -53.61718821
+      },
+      {
+        "latitude": -24.76819054,
+        "longitude": -53.61718821
+      }
+    ]
+  },
+  {
+    "nome": "Setor 4",
+    "coordenadas": [
+      {
+        "latitude": -24.76779448,
+        "longitude": -53.61633529
+      },
+      {
+        "latitude": -24.76781227,
+        "longitude": -53.61633529
+      },
+      {
+        "latitude": -24.76781227,
+        "longitude": -53.61630366
+      },
+      {
+        "latitude": -24.76801227,
+        "longitude": -53.61630366
+      },
+      {
+        "latitude": -24.76801227,
+        "longitude": -53.61650366
+      },
+      {
+        "latitude": -24.76799448,
+        "longitude": -53.61650366
+      },
+      {
+        "latitude": -24.76799448,
+        "longitude": -53.61653529
+      },
+      {
+        "latitude": -24.76779448,
+        "longitude": -53.61653529
+      },
+      {
+        "latitude": -24.76779448,
+        "longitude": -53.61633529
+      }
+    ]
+  },
+  {
+    "nome": "Setor 5",
+    "coordenadas": [
+      {
+        "latitude": -24.76787312,
+        "longitude": -53.61615777
+      },
+      {
+        "latitude": -24.76767312,
+        "longitude": -53.61615777
+      },
+      {
+        "latitude": -24.76767312,
+        "longitude": -53.61595777
+      },
+      {
+        "latitude": -24.76787312,
+        "longitude": -53.61595777
+      },
+      {
+        "latitude": -24.76787312,
+        "longitude": -53.61615777
+      }
+    ]
+  },
+  {
+    "nome": "Setor 6",
+    "coordenadas": [
+      {
+        "latitude": -24.7676148,
+        "longitude": -53.61675515
+      },
+      {
+        "latitude": -24.7676148,
+        "longitude": -53.61655913
+      },
+      {
+        "latitude": -24.7678148,
+        "longitude": -53.61655913
+      },
+      {
+        "latitude": -24.7678148,
+        "longitude": -53.61675435
+      },
+      {
+        "latitude": -24.7676148,
+        "longitude": -53.61675515
+      }
+    ]
+  },
+  {
+    "nome": "Setor 7",
+    "coordenadas": [
+      {
+        "latitude": -24.76780978,
+        "longitude": -53.61535496
+      },
+      {
+        "latitude": -24.76780978,
+        "longitude": -53.61555496
+      },
+      {
+        "latitude": -24.76760978,
+        "longitude": -53.61555496
+      },
+      {
+        "latitude": -24.76760978,
+        "longitude": -53.61535496
+      },
+      {
+        "latitude": -24.76780978,
+        "longitude": -53.61535496
+      }
+    ]
+  },
+  {
+    "nome": "Setor 8",
+    "coordenadas": [
+      {
+        "latitude": -24.76776298,
+        "longitude": -53.61697951
+      },
+      {
+        "latitude": -24.76756298,
+        "longitude": -53.61697951
+      },
+      {
+        "latitude": -24.76756298,
+        "longitude": -53.61677951
+      },
+      {
+        "latitude": -24.76776298,
+        "longitude": -53.61677951
+      },
+      {
+        "latitude": -24.76776298,
+        "longitude": -53.61697951
+      }
+    ]
+  },
+  {
+    "nome": "Setor 9",
+    "coordenadas": [
+      {
+        "latitude": -24.7675232,
+        "longitude": -53.61672777
+      },
+      {
+        "latitude": -24.7673232,
+        "longitude": -53.61672777
+      },
+      {
+        "latitude": -24.7673232,
+        "longitude": -53.61652777
+      },
+      {
+        "latitude": -24.7675232,
+        "longitude": -53.61652777
+      },
+      {
+        "latitude": -24.7675232,
+        "longitude": -53.61672777
+      }
+    ]
+  },
+  {
+    "nome": "Setor 10",
+    "coordenadas": [
+      {
+        "latitude": -24.76715049,
+        "longitude": -53.61618164
+      },
+      {
+        "latitude": -24.76715049,
+        "longitude": -53.61598164
+      },
+      {
+        "latitude": -24.76723051,
+        "longitude": -53.61598164
+      },
+      {
+        "latitude": -24.76723051,
+        "longitude": -53.61588444
+      },
+      {
+        "latitude": -24.76743051,
+        "longitude": -53.61588444
+      },
+      {
+        "latitude": -24.76743051,
+        "longitude": -53.61608444
+      },
+      {
+        "latitude": -24.76735049,
+        "longitude": -53.61608444
+      },
+      {
+        "latitude": -24.76735049,
+        "longitude": -53.61618164
+      },
+      {
+        "latitude": -24.76715049,
+        "longitude": -53.61618164
+      }
+    ]
+  },
+  {
+    "nome": "Setor 11",
+    "coordenadas": [
+      {
+        "latitude": -24.7668923,
+        "longitude": -53.61530307
+      },
+      {
+        "latitude": -24.76692923,
+        "longitude": -53.61530307
+      },
+      {
+        "latitude": -24.76692923,
+        "longitude": -53.6151684
+      },
+      {
+        "latitude": -24.76712923,
+        "longitude": -53.6151684
+      },
+      {
+        "latitude": -24.76712923,
+        "longitude": -53.6153684
+      },
+      {
+        "latitude": -24.7670923,
+        "longitude": -53.6153684
+      },
+      {
+        "latitude": -24.7670923,
+        "longitude": -53.61550307
+      },
+      {
+        "latitude": -24.7668923,
+        "longitude": -53.61550307
+      },
+      {
+        "latitude": -24.7668923,
+        "longitude": -53.61530307
+      }
+    ]
+  },
+  {
+    "nome": "Setor 12",
+    "coordenadas": [
+      {
+        "latitude": -24.76686695,
+        "longitude": -53.61622518
+      },
+      {
+        "latitude": -24.76666695,
+        "longitude": -53.61622518
+      },
+      {
+        "latitude": -24.76666695,
+        "longitude": -53.61602518
+      },
+      {
+        "latitude": -24.76686695,
+        "longitude": -53.61602518
+      },
+      {
+        "latitude": -24.76686695,
+        "longitude": -53.61622518
+      }
+    ]
+  },
+  {
+    "nome": "Setor 13",
+    "coordenadas": [
+      {
+        "latitude": -24.76664514,
+        "longitude": -53.61665185
+      },
+      {
+        "latitude": -24.76644514,
+        "longitude": -53.61665185
+      },
+      {
+        "latitude": -24.76644514,
+        "longitude": -53.61645185
+      },
+      {
+        "latitude": -24.76664514,
+        "longitude": -53.61645185
+      },
+      {
+        "latitude": -24.76664514,
+        "longitude": -53.61665185
+      }
+    ]
+  },
+  {
+    "nome": "Setor 14",
+    "coordenadas": [
+      {
+        "latitude": -24.76660607,
+        "longitude": -53.61567077
+      },
+      {
+        "latitude": -24.76660607,
+        "longitude": -53.61587077
+      },
+      {
+        "latitude": -24.76640607,
+        "longitude": -53.61587077
+      },
+      {
+        "latitude": -24.76640607,
+        "longitude": -53.61567077
+      },
+      {
+        "latitude": -24.76660607,
+        "longitude": -53.61567077
+      }
+    ]
+  },
+  {
+    "nome": "Setor 15",
+    "coordenadas": [
+      {
+        "latitude": -24.76623829,
+        "longitude": -53.61690223
+      },
+      {
+        "latitude": -24.76603829,
+        "longitude": -53.61690223
+      },
+      {
+        "latitude": -24.76603829,
+        "longitude": -53.61670223
+      },
+      {
+        "latitude": -24.76623829,
+        "longitude": -53.61670223
+      },
+      {
+        "latitude": -24.76623829,
+        "longitude": -53.61690223
+      }
+    ]
+  },
+  {
+    "nome": "Setor 16",
+    "coordenadas": [
+      {
+        "latitude": -24.76582638,
+        "longitude": -53.61686452
+      },
+      {
+        "latitude": -24.76562638,
+        "longitude": -53.61686452
+      },
+      {
+        "latitude": -24.76562638,
+        "longitude": -53.61666452
+      },
+      {
+        "latitude": -24.76582638,
+        "longitude": -53.61666452
+      },
+      {
+        "latitude": -24.76582638,
+        "longitude": -53.61686452
+      }
+    ]
+  },
+  {
+    "nome": "Setor 17",
+    "coordenadas": [
+      {
+        "latitude": -24.76531545,
+        "longitude": -53.61537406
+      },
+      {
+        "latitude": -24.76511545,
+        "longitude": -53.61537406
+      },
+      {
+        "latitude": -24.76511545,
+        "longitude": -53.61524784
+      },
+      {
+        "latitude": -24.76496765,
+        "longitude": -53.61524784
+      },
+      {
+        "latitude": -24.76496765,
+        "longitude": -53.61504784
+      },
+      {
+        "latitude": -24.76516765,
+        "longitude": -53.61504784
+      },
+      {
+        "latitude": -24.76516765,
+        "longitude": -53.61517406
+      },
+      {
+        "latitude": -24.76531545,
+        "longitude": -53.61517406
+      },
+      {
+        "latitude": -24.76531545,
+        "longitude": -53.61537406
+      }
+    ]
+  },
+  {
+    "nome": "Setor 18",
+    "coordenadas": [
+      {
+        "latitude": -24.76509501,
+        "longitude": -53.6156893
+      },
+      {
+        "latitude": -24.76489501,
+        "longitude": -53.6156893
+      },
+      {
+        "latitude": -24.76489501,
+        "longitude": -53.6154893
+      },
+      {
+        "latitude": -24.76509501,
+        "longitude": -53.6154893
+      },
+      {
+        "latitude": -24.76509501,
+        "longitude": -53.6156893
+      }
+    ]
+  },
+  {
+    "nome": "Setor 19",
+    "coordenadas": [
+      {
+        "latitude": -24.76402412,
+        "longitude": -53.61551271
+      },
+      {
+        "latitude": -24.76402412,
+        "longitude": -53.61532381
+      },
+      {
+        "latitude": -24.76422412,
+        "longitude": -53.61532381
+      },
+      {
+        "latitude": -24.76422412,
+        "longitude": -53.61551192
+      },
+      {
+        "latitude": -24.76402412,
+        "longitude": -53.61551271
+      }
+    ]
+  },
+  {
+    "nome": "Setor 20",
+    "coordenadas": [
+      {
+        "latitude": -24.76275371,
+        "longitude": -53.61553103
+      },
+      {
+        "latitude": -24.76255371,
+        "longitude": -53.61553103
+      },
+      {
+        "latitude": -24.76255371,
+        "longitude": -53.61533103
+      },
+      {
+        "latitude": -24.76275371,
+        "longitude": -53.61533103
+      },
+      {
+        "latitude": -24.76275371,
+        "longitude": -53.61553103
+      }
+    ]
+  },
+  {
+    "nome": "Setor 21",
+    "coordenadas": [
+      {
+        "latitude": -24.76855881,
+        "longitude": -53.61470758
+      },
+      {
+        "latitude": -24.76835881,
+        "longitude": -53.61470893
+      },
+      {
+        "latitude": -24.76835881,
+        "longitude": -53.61467454
+      },
+      {
+        "latitude": -24.76855881,
+        "longitude": -53.61467454
+      },
+      {
+        "latitude": -24.76855881,
+        "longitude": -53.61470758
+      }
+    ]
+  },
+  {
+    "nome": "Setor 22",
+    "coordenadas": [
+      {
+        "latitude": -24.76833175,
+        "longitude": -53.61487104
+      },
+      {
+        "latitude": -24.76813175,
+        "longitude": -53.61487104
+      },
+      {
+        "latitude": -24.76813175,
+        "longitude": -53.61467104
+      },
+      {
+        "latitude": -24.76833175,
+        "longitude": -53.61467104
+      },
+      {
+        "latitude": -24.76833175,
+        "longitude": -53.61487104
+      }
+    ]
+  },
+  {
+    "nome": "Setor 23",
+    "coordenadas": [
+      {
+        "latitude": -24.76813092,
+        "longitude": -53.61460646
+      },
+      {
+        "latitude": -24.76813092,
+        "longitude": -53.61480646
+      },
+      {
+        "latitude": -24.76793092,
+        "longitude": -53.61480646
+      },
+      {
+        "latitude": -24.76793092,
+        "longitude": -53.61460646
+      },
+      {
+        "latitude": -24.76813092,
+        "longitude": -53.61460646
+      }
+    ]
+  },
+  {
+    "nome": "Setor 24",
+    "coordenadas": [
+      {
+        "latitude": -24.76741966,
+        "longitude": -53.61476759
+      },
+      {
+        "latitude": -24.7674431,
+        "longitude": -53.61476759
+      },
+      {
+        "latitude": -24.7674431,
+        "longitude": -53.61496759
+      },
+      {
+        "latitude": -24.76742234,
+        "longitude": -53.61496759
+      },
+      {
+        "latitude": -24.76741966,
+        "longitude": -53.61476759
+      }
+    ]
+  },
+  {
+    "nome": "Setor 25",
+    "coordenadas": [
+      {
+        "latitude": -24.76638502,
+        "longitude": -53.61445659
+      },
+      {
+        "latitude": -24.76651295,
+        "longitude": -53.61445659
+      },
+      {
+        "latitude": -24.76651295,
+        "longitude": -53.61431019
+      },
+      {
+        "latitude": -24.76671295,
+        "longitude": -53.61431019
+      },
+      {
+        "latitude": -24.76671295,
+        "longitude": -53.61451019
+      },
+      {
+        "latitude": -24.76658502,
+        "longitude": -53.61451019
+      },
+      {
+        "latitude": -24.76658502,
+        "longitude": -53.61464233
+      },
+      {
+        "latitude": -24.76638502,
+        "longitude": -53.61464313
+      },
+      {
+        "latitude": -24.76638502,
+        "longitude": -53.61445659
+      }
+    ]
+  },
+  {
+    "nome": "Setor 26",
+    "coordenadas": [
+      {
+        "latitude": -24.76621879,
+        "longitude": -53.61395817
+      },
+      {
+        "latitude": -24.76601879,
+        "longitude": -53.61395817
+      },
+      {
+        "latitude": -24.76601879,
+        "longitude": -53.61375817
+      },
+      {
+        "latitude": -24.76621879,
+        "longitude": -53.61375817
+      },
+      {
+        "latitude": -24.76621879,
+        "longitude": -53.61395817
+      }
+    ]
+  },
+  {
+    "nome": "Setor 27",
+    "coordenadas": [
+      {
+        "latitude": -24.7647658,
+        "longitude": -53.61398384
+      },
+      {
+        "latitude": -24.7647658,
+        "longitude": -53.61418384
+      },
+      {
+        "latitude": -24.7645658,
+        "longitude": -53.61418384
+      },
+      {
+        "latitude": -24.7645658,
+        "longitude": -53.61398384
+      },
+      {
+        "latitude": -24.7647658,
+        "longitude": -53.61398384
+      }
+    ]
+  },
+  {
+    "nome": "Setor 28",
+    "coordenadas": [
+      {
+        "latitude": -24.76461483,
+        "longitude": -53.61506408
+      },
+      {
+        "latitude": -24.76441483,
+        "longitude": -53.61506408
+      },
+      {
+        "latitude": -24.76441483,
+        "longitude": -53.61486408
+      },
+      {
+        "latitude": -24.76461483,
+        "longitude": -53.61486408
+      },
+      {
+        "latitude": -24.76461483,
+        "longitude": -53.61506408
+      }
+    ]
+  },
+  {
+    "nome": "Setor 29",
+    "coordenadas": [
+      {
+        "latitude": -24.76446437,
+        "longitude": -53.614131
+      },
+      {
+        "latitude": -24.76449584,
+        "longitude": -53.614131
+      },
+      {
+        "latitude": -24.76449584,
+        "longitude": -53.614331
+      },
+      {
+        "latitude": -24.76446704,
+        "longitude": -53.614331
+      },
+      {
+        "latitude": -24.76446437,
+        "longitude": -53.614131
+      }
+    ]
+  },
+  {
+    "nome": "Setor 30",
+    "coordenadas": [
+      {
+        "latitude": -24.76420754,
+        "longitude": -53.61472026
+      },
+      {
+        "latitude": -24.76420754,
+        "longitude": -53.61492026
+      },
+      {
+        "latitude": -24.76400754,
+        "longitude": -53.61492026
+      },
+      {
+        "latitude": -24.76400754,
+        "longitude": -53.61472026
+      },
+      {
+        "latitude": -24.76420754,
+        "longitude": -53.61472026
+      }
+    ]
+  },
+  {
+    "nome": "Setor 31",
+    "coordenadas": [
+      {
+        "latitude": -24.76409203,
+        "longitude": -53.61530112
+      },
+      {
+        "latitude": -24.76389203,
+        "longitude": -53.61530112
+      },
+      {
+        "latitude": -24.76389203,
+        "longitude": -53.61510112
+      },
+      {
+        "latitude": -24.76409203,
+        "longitude": -53.61510112
+      },
+      {
+        "latitude": -24.76409203,
+        "longitude": -53.61530112
+      }
+    ]
+  },
+  {
+    "nome": "Setor 32",
+    "coordenadas": [
+      {
+        "latitude": -24.7640832,
+        "longitude": -53.61403108
+      },
+      {
+        "latitude": -24.7638832,
+        "longitude": -53.61403108
+      },
+      {
+        "latitude": -24.7638832,
+        "longitude": -53.61383108
+      },
+      {
+        "latitude": -24.7640832,
+        "longitude": -53.61383108
+      },
+      {
+        "latitude": -24.7640832,
+        "longitude": -53.61403108
+      }
+    ]
+  },
+  {
+    "nome": "Setor 33",
+    "coordenadas": [
+      {
+        "latitude": -24.76291752,
+        "longitude": -53.61387464
+      },
+      {
+        "latitude": -24.76291752,
+        "longitude": -53.61407464
+      },
+      {
+        "latitude": -24.76271752,
+        "longitude": -53.61407464
+      },
+      {
+        "latitude": -24.76271752,
+        "longitude": -53.61387464
+      },
+      {
+        "latitude": -24.76291752,
+        "longitude": -53.61387464
+      }
+    ]
+  },
+  {
+    "nome": "Setor 34",
+    "coordenadas": [
+      {
+        "latitude": -24.76283806,
+        "longitude": -53.61451863
+      },
+      {
+        "latitude": -24.76263806,
+        "longitude": -53.61451863
+      },
+      {
+        "latitude": -24.76263806,
+        "longitude": -53.61431863
+      },
+      {
+        "latitude": -24.76283806,
+        "longitude": -53.61431863
+      },
+      {
+        "latitude": -24.76283806,
+        "longitude": -53.61451863
+      }
+    ]
+  },
+  {
+    "nome": "Setor 35",
+    "coordenadas": [
+      {
+        "latitude": -24.76270557,
+        "longitude": -53.61498678
+      },
+      {
+        "latitude": -24.76250557,
+        "longitude": -53.61498678
+      },
+      {
+        "latitude": -24.76250557,
+        "longitude": -53.61478678
+      },
+      {
+        "latitude": -24.76270557,
+        "longitude": -53.61478678
+      },
+      {
+        "latitude": -24.76270557,
+        "longitude": -53.61498678
+      }
+    ]
+  },
+  {
+    "nome": "Setor 36",
+    "coordenadas": [
+      {
+        "latitude": -24.76230535,
+        "longitude": -53.61438533
+      },
+      {
+        "latitude": -24.76230535,
+        "longitude": -53.61418533
+      },
+      {
+        "latitude": -24.76243959,
+        "longitude": -53.61418533
+      },
+      {
+        "latitude": -24.76243959,
+        "longitude": -53.61409364
+      },
+      {
+        "latitude": -24.76263959,
+        "longitude": -53.61409364
+      },
+      {
+        "latitude": -24.76263959,
+        "longitude": -53.61429364
+      },
+      {
+        "latitude": -24.76250535,
+        "longitude": -53.61429364
+      },
+      {
+        "latitude": -24.76250535,
+        "longitude": -53.61438533
+      },
+      {
+        "latitude": -24.76230535,
+        "longitude": -53.61438533
+      }
+    ]
+  },
+  {
+    "nome": "Setor 37",
+    "coordenadas": [
+      {
+        "latitude": -24.76249739,
+        "longitude": -53.61512734
+      },
+      {
+        "latitude": -24.76229739,
+        "longitude": -53.61512734
+      },
+      {
+        "latitude": -24.76229739,
+        "longitude": -53.61492734
+      },
+      {
+        "latitude": -24.76249739,
+        "longitude": -53.61492734
+      },
+      {
+        "latitude": -24.76249739,
+        "longitude": -53.61512734
+      }
+    ]
+  },
+  {
+    "nome": "Setor 38",
+    "coordenadas": [
+      {
+        "latitude": -24.76241444,
+        "longitude": -53.61388736
+      },
+      {
+        "latitude": -24.76221444,
+        "longitude": -53.61388736
+      },
+      {
+        "latitude": -24.76221444,
+        "longitude": -53.61368736
+      },
+      {
+        "latitude": -24.76241444,
+        "longitude": -53.61368736
+      },
+      {
+        "latitude": -24.76241444,
+        "longitude": -53.61388736
+      }
+    ]
+  },
+  {
+    "nome": "Setor 39",
+    "coordenadas": [
+      {
+        "latitude": -24.76177309,
+        "longitude": -53.61436739
+      },
+      {
+        "latitude": -24.76197309,
+        "longitude": -53.61436739
+      },
+      {
+        "latitude": -24.76197309,
+        "longitude": -53.61446821
+      },
+      {
+        "latitude": -24.76211703,
+        "longitude": -53.61446821
+      },
+      {
+        "latitude": -24.76211703,
+        "longitude": -53.61466821
+      },
+      {
+        "latitude": -24.76191703,
+        "longitude": -53.61466821
+      },
+      {
+        "latitude": -24.76191703,
+        "longitude": -53.61456739
+      },
+      {
+        "latitude": -24.76177309,
+        "longitude": -53.61456739
+      },
+      {
+        "latitude": -24.76177309,
+        "longitude": -53.61436739
+      }
+    ]
+  },
+  {
+    "nome": "Setor 40",
+    "coordenadas": [
+      {
+        "latitude": -24.7620459,
+        "longitude": -53.61416706
+      },
+      {
+        "latitude": -24.7618459,
+        "longitude": -53.61416706
+      },
+      {
+        "latitude": -24.7618459,
+        "longitude": -53.61396706
+      },
+      {
+        "latitude": -24.7620459,
+        "longitude": -53.61396706
+      },
+      {
+        "latitude": -24.7620459,
+        "longitude": -53.61416706
+      }
+    ]
+  },
+  {
+    "nome": "Setor 41",
+    "coordenadas": [
+      {
+        "latitude": -24.76652858,
+        "longitude": -53.61246761
+      },
+      {
+        "latitude": -24.76652858,
+        "longitude": -53.61266761
+      },
+      {
+        "latitude": -24.76632858,
+        "longitude": -53.61266761
+      },
+      {
+        "latitude": -24.76632858,
+        "longitude": -53.61246761
+      },
+      {
+        "latitude": -24.76652858,
+        "longitude": -53.61246761
+      }
+    ]
+  },
+  {
+    "nome": "Setor 42",
+    "coordenadas": [
+      {
+        "latitude": -24.76625756,
+        "longitude": -53.61330402
+      },
+      {
+        "latitude": -24.76605756,
+        "longitude": -53.61330402
+      },
+      {
+        "latitude": -24.76605756,
+        "longitude": -53.61310402
+      },
+      {
+        "latitude": -24.76625756,
+        "longitude": -53.61310402
+      },
+      {
+        "latitude": -24.76625756,
+        "longitude": -53.61330402
+      }
+    ]
+  },
+  {
+    "nome": "Setor 43",
+    "coordenadas": [
+      {
+        "latitude": -24.76607656,
+        "longitude": -53.61360536
+      },
+      {
+        "latitude": -24.76606976,
+        "longitude": -53.61360536
+      },
+      {
+        "latitude": -24.76606976,
+        "longitude": -53.61340536
+      },
+      {
+        "latitude": -24.76612064,
+        "longitude": -53.61340536
+      },
+      {
+        "latitude": -24.76607656,
+        "longitude": -53.61360536
+      }
+    ]
+  },
+  {
+    "nome": "Setor 44",
+    "coordenadas": [
+      {
+        "latitude": -24.76589691,
+        "longitude": -53.61297891
+      },
+      {
+        "latitude": -24.76585283,
+        "longitude": -53.61317891
+      },
+      {
+        "latitude": -24.76580196,
+        "longitude": -53.61317891
+      },
+      {
+        "latitude": -24.76580196,
+        "longitude": -53.61297891
+      },
+      {
+        "latitude": -24.76589691,
+        "longitude": -53.61297891
+      }
+    ]
+  },
+  {
+    "nome": "Setor 45",
+    "coordenadas": [
+      {
+        "latitude": -24.76594021,
+        "longitude": -53.61277863
+      },
+      {
+        "latitude": -24.76574021,
+        "longitude": -53.61277863
+      },
+      {
+        "latitude": -24.76574021,
+        "longitude": -53.61257863
+      },
+      {
+        "latitude": -24.76594021,
+        "longitude": -53.61257863
+      },
+      {
+        "latitude": -24.76594021,
+        "longitude": -53.61277863
+      }
+    ]
+  },
+  {
+    "nome": "Setor 46",
+    "coordenadas": [
+      {
+        "latitude": -24.76553819,
+        "longitude": -53.61322497
+      },
+      {
+        "latitude": -24.76533819,
+        "longitude": -53.61322497
+      },
+      {
+        "latitude": -24.76533819,
+        "longitude": -53.61306354
+      },
+      {
+        "latitude": -24.76530161,
+        "longitude": -53.61306354
+      },
+      {
+        "latitude": -24.76530161,
+        "longitude": -53.61286354
+      },
+      {
+        "latitude": -24.76544012,
+        "longitude": -53.61286354
+      },
+      {
+        "latitude": -24.76544012,
+        "longitude": -53.61273088
+      },
+      {
+        "latitude": -24.76564012,
+        "longitude": -53.61273088
+      },
+      {
+        "latitude": -24.76564012,
+        "longitude": -53.61293088
+      },
+      {
+        "latitude": -24.76550161,
+        "longitude": -53.61293088
+      },
+      {
+        "latitude": -24.76550161,
+        "longitude": -53.61302497
+      },
+      {
+        "latitude": -24.76553819,
+        "longitude": -53.61302497
+      },
+      {
+        "latitude": -24.76553819,
+        "longitude": -53.61322497
+      }
+    ]
+  },
+  {
+    "nome": "Setor 47",
+    "coordenadas": [
+      {
+        "latitude": -24.76546902,
+        "longitude": -53.61225971
+      },
+      {
+        "latitude": -24.76526902,
+        "longitude": -53.61225971
+      },
+      {
+        "latitude": -24.76526902,
+        "longitude": -53.61205971
+      },
+      {
+        "latitude": -24.76546902,
+        "longitude": -53.61205971
+      },
+      {
+        "latitude": -24.76546902,
+        "longitude": -53.61225971
+      }
+    ]
+  },
+  {
+    "nome": "Setor 48",
+    "coordenadas": [
+      {
+        "latitude": -24.76545699,
+        "longitude": -53.61352263
+      },
+      {
+        "latitude": -24.76545699,
+        "longitude": -53.61372263
+      },
+      {
+        "latitude": -24.76525699,
+        "longitude": -53.61372263
+      },
+      {
+        "latitude": -24.76525699,
+        "longitude": -53.61352263
+      },
+      {
+        "latitude": -24.76545699,
+        "longitude": -53.61352263
+      }
+    ]
+  },
+  {
+    "nome": "Setor 49",
+    "coordenadas": [
+      {
+        "latitude": -24.76495916,
+        "longitude": -53.61295398
+      },
+      {
+        "latitude": -24.76495916,
+        "longitude": -53.61277377
+      },
+      {
+        "latitude": -24.76515916,
+        "longitude": -53.61277377
+      },
+      {
+        "latitude": -24.76515916,
+        "longitude": -53.61295319
+      },
+      {
+        "latitude": -24.76495916,
+        "longitude": -53.61295398
+      }
+    ]
+  },
+  {
+    "nome": "Setor 50",
+    "coordenadas": [
+      {
+        "latitude": -24.76460531,
+        "longitude": -53.61346606
+      },
+      {
+        "latitude": -24.76475831,
+        "longitude": -53.61346606
+      },
+      {
+        "latitude": -24.76475831,
+        "longitude": -53.61351124
+      },
+      {
+        "latitude": -24.76472839,
+        "longitude": -53.61351144
+      },
+      {
+        "latitude": -24.76484022,
+        "longitude": -53.61351144
+      },
+      {
+        "latitude": -24.76484022,
+        "longitude": -53.61371144
+      },
+      {
+        "latitude": -24.76464022,
+        "longitude": -53.61371144
+      },
+      {
+        "latitude": -24.76464022,
+        "longitude": -53.61351203
+      },
+      {
+        "latitude": -24.76460571,
+        "longitude": -53.61351226
+      },
+      {
+        "latitude": -24.76460531,
+        "longitude": -53.61346606
+      }
+    ]
+  },
+  {
+    "nome": "Setor 51",
+    "coordenadas": [
+      {
+        "latitude": -24.76453029,
+        "longitude": -53.61188355
+      },
+      {
+        "latitude": -24.76453029,
+        "longitude": -53.61186802
+      },
+      {
+        "latitude": -24.76473029,
+        "longitude": -53.61186802
+      },
+      {
+        "latitude": -24.76473029,
+        "longitude": -53.6118822
+      },
+      {
+        "latitude": -24.76453029,
+        "longitude": -53.61188355
+      }
+    ]
+  },
+  {
+    "nome": "Setor 52",
+    "coordenadas": [
+      {
+        "latitude": -24.76344687,
+        "longitude": -53.61319683
+      },
+      {
+        "latitude": -24.76324687,
+        "longitude": -53.61319683
+      },
+      {
+        "latitude": -24.76324687,
+        "longitude": -53.61299683
+      },
+      {
+        "latitude": -24.76344687,
+        "longitude": -53.61299683
+      },
+      {
+        "latitude": -24.76344687,
+        "longitude": -53.61319683
+      }
+    ]
+  },
+  {
+    "nome": "Setor 53",
+    "coordenadas": [
+      {
+        "latitude": -24.7634028,
+        "longitude": -53.61249887
+      },
+      {
+        "latitude": -24.7634028,
+        "longitude": -53.61269887
+      },
+      {
+        "latitude": -24.7632028,
+        "longitude": -53.61269887
+      },
+      {
+        "latitude": -24.7632028,
+        "longitude": -53.61249887
+      },
+      {
+        "latitude": -24.7634028,
+        "longitude": -53.61249887
+      }
+    ]
+  },
+  {
+    "nome": "Setor 54",
+    "coordenadas": [
+      {
+        "latitude": -24.76329841,
+        "longitude": -53.61225927
+      },
+      {
+        "latitude": -24.76309841,
+        "longitude": -53.61225927
+      },
+      {
+        "latitude": -24.76309841,
+        "longitude": -53.61205927
+      },
+      {
+        "latitude": -24.76329841,
+        "longitude": -53.61205927
+      },
+      {
+        "latitude": -24.76329841,
+        "longitude": -53.61225927
+      }
+    ]
+  },
+  {
+    "nome": "Setor 55",
+    "coordenadas": [
+      {
+        "latitude": -24.7630165,
+        "longitude": -53.61215888
+      },
+      {
+        "latitude": -24.7628165,
+        "longitude": -53.61215888
+      },
+      {
+        "latitude": -24.7628165,
+        "longitude": -53.61195888
+      },
+      {
+        "latitude": -24.7630165,
+        "longitude": -53.61195888
+      },
+      {
+        "latitude": -24.7630165,
+        "longitude": -53.61215888
+      }
+    ]
+  },
+  {
+    "nome": "Setor 56",
+    "coordenadas": [
+      {
+        "latitude": -24.76277962,
+        "longitude": -53.61225277
+      },
+      {
+        "latitude": -24.76277962,
+        "longitude": -53.61245277
+      },
+      {
+        "latitude": -24.76257962,
+        "longitude": -53.61245277
+      },
+      {
+        "latitude": -24.76257962,
+        "longitude": -53.61225277
+      },
+      {
+        "latitude": -24.76277962,
+        "longitude": -53.61225277
+      }
+    ]
+  },
+  {
+    "nome": "Setor 57",
+    "coordenadas": [
+      {
+        "latitude": -24.76239814,
+        "longitude": -53.61322438
+      },
+      {
+        "latitude": -24.76251393,
+        "longitude": -53.61322438
+      },
+      {
+        "latitude": -24.76251393,
+        "longitude": -53.61303531
+      },
+      {
+        "latitude": -24.76271393,
+        "longitude": -53.61303531
+      },
+      {
+        "latitude": -24.76271393,
+        "longitude": -53.61323531
+      },
+      {
+        "latitude": -24.76259814,
+        "longitude": -53.61323531
+      },
+      {
+        "latitude": -24.76259814,
+        "longitude": -53.61342438
+      },
+      {
+        "latitude": -24.76239814,
+        "longitude": -53.61342438
+      },
+      {
+        "latitude": -24.76239814,
+        "longitude": -53.61322438
+      }
+    ]
+  },
+  {
+    "nome": "Setor 58",
+    "coordenadas": [
+      {
+        "latitude": -24.76229593,
+        "longitude": -53.61208129
+      },
+      {
+        "latitude": -24.76209593,
+        "longitude": -53.61208129
+      },
+      {
+        "latitude": -24.76209593,
+        "longitude": -53.61188129
+      },
+      {
+        "latitude": -24.76229593,
+        "longitude": -53.61188129
+      },
+      {
+        "latitude": -24.76229593,
+        "longitude": -53.61208129
+      }
+    ]
+  },
+  {
+    "nome": "Setor 59",
+    "coordenadas": [
+      {
+        "latitude": -24.76211859,
+        "longitude": -53.61237172
+      },
+      {
+        "latitude": -24.76191859,
+        "longitude": -53.61237172
+      },
+      {
+        "latitude": -24.76191859,
+        "longitude": -53.61217172
+      },
+      {
+        "latitude": -24.76211859,
+        "longitude": -53.61217172
+      },
+      {
+        "latitude": -24.76211859,
+        "longitude": -53.61237172
+      }
+    ]
+  },
+  {
+    "nome": "Setor 60",
+    "coordenadas": [
+      {
+        "latitude": -24.76192509,
+        "longitude": -53.612774
+      },
+      {
+        "latitude": -24.76172509,
+        "longitude": -53.612774
+      },
+      {
+        "latitude": -24.76172509,
+        "longitude": -53.612574
+      },
+      {
+        "latitude": -24.76192509,
+        "longitude": -53.612574
+      },
+      {
+        "latitude": -24.76192509,
+        "longitude": -53.612774
+      }
+    ]
+  },
+  {
+    "nome": "Setor 61",
+    "coordenadas": [
+      {
+        "latitude": -24.76177009,
+        "longitude": -53.61310035
+      },
+      {
+        "latitude": -24.76157009,
+        "longitude": -53.61310035
+      },
+      {
+        "latitude": -24.76157009,
+        "longitude": -53.61290035
+      },
+      {
+        "latitude": -24.76177009,
+        "longitude": -53.61290035
+      },
+      {
+        "latitude": -24.76177009,
+        "longitude": -53.61310035
+      }
+    ]
+  },
+  {
+    "nome": "Setor 62",
+    "coordenadas": [
+      {
+        "latitude": -24.76637905,
+        "longitude": -53.61140847
+      },
+      {
+        "latitude": -24.76637905,
+        "longitude": -53.61160847
+      },
+      {
+        "latitude": -24.76617905,
+        "longitude": -53.61160847
+      },
+      {
+        "latitude": -24.76617905,
+        "longitude": -53.61140847
+      },
+      {
+        "latitude": -24.76637905,
+        "longitude": -53.61140847
+      }
+    ]
+  },
+  {
+    "nome": "Setor 63",
+    "coordenadas": [
+      {
+        "latitude": -24.76574569,
+        "longitude": -53.61135938
+      },
+      {
+        "latitude": -24.76585363,
+        "longitude": -53.61135938
+      },
+      {
+        "latitude": -24.76585363,
+        "longitude": -53.61126011
+      },
+      {
+        "latitude": -24.76605363,
+        "longitude": -53.61126011
+      },
+      {
+        "latitude": -24.76605363,
+        "longitude": -53.61146011
+      },
+      {
+        "latitude": -24.76594569,
+        "longitude": -53.61146011
+      },
+      {
+        "latitude": -24.76594569,
+        "longitude": -53.61155938
+      },
+      {
+        "latitude": -24.76574569,
+        "longitude": -53.61155938
+      },
+      {
+        "latitude": -24.76574569,
+        "longitude": -53.61135938
+      }
+    ]
+  },
+  {
+    "nome": "Setor 64",
+    "coordenadas": [
+      {
+        "latitude": -24.76544703,
+        "longitude": -53.61120106
+      },
+      {
+        "latitude": -24.76544703,
+        "longitude": -53.61140106
+      },
+      {
+        "latitude": -24.76524703,
+        "longitude": -53.61140106
+      },
+      {
+        "latitude": -24.76524703,
+        "longitude": -53.61120106
+      },
+      {
+        "latitude": -24.76544703,
+        "longitude": -53.61120106
+      }
+    ]
+  },
+  {
+    "nome": "Setor 65",
+    "coordenadas": [
+      {
+        "latitude": -24.76489738,
+        "longitude": -53.61088004
+      },
+      {
+        "latitude": -24.76509738,
+        "longitude": -53.61088004
+      },
+      {
+        "latitude": -24.76509738,
+        "longitude": -53.6109787
+      },
+      {
+        "latitude": -24.76516573,
+        "longitude": -53.6109787
+      },
+      {
+        "latitude": -24.76516573,
+        "longitude": -53.6111787
+      },
+      {
+        "latitude": -24.76496573,
+        "longitude": -53.6111787
+      },
+      {
+        "latitude": -24.76496573,
+        "longitude": -53.61108004
+      },
+      {
+        "latitude": -24.76489738,
+        "longitude": -53.61108004
+      },
+      {
+        "latitude": -24.76489738,
+        "longitude": -53.61088004
+      }
+    ]
+  },
+  {
+    "nome": "Setor 66",
+    "coordenadas": [
+      {
+        "latitude": -24.76476077,
+        "longitude": -53.61018605
+      },
+      {
+        "latitude": -24.76496077,
+        "longitude": -53.61018605
+      },
+      {
+        "latitude": -24.76496077,
+        "longitude": -53.61024507
+      },
+      {
+        "latitude": -24.76512955,
+        "longitude": -53.61024507
+      },
+      {
+        "latitude": -24.76512955,
+        "longitude": -53.61044507
+      },
+      {
+        "latitude": -24.76492955,
+        "longitude": -53.61044507
+      },
+      {
+        "latitude": -24.76492955,
+        "longitude": -53.61038605
+      },
+      {
+        "latitude": -24.76476077,
+        "longitude": -53.61038605
+      },
+      {
+        "latitude": -24.76476077,
+        "longitude": -53.61018605
+      }
+    ]
+  },
+  {
+    "nome": "Setor 67",
+    "coordenadas": [
+      {
+        "latitude": -24.764787,
+        "longitude": -53.61159346
+      },
+      {
+        "latitude": -24.764787,
+        "longitude": -53.61140218
+      },
+      {
+        "latitude": -24.764987,
+        "longitude": -53.61140218
+      },
+      {
+        "latitude": -24.764987,
+        "longitude": -53.61159267
+      },
+      {
+        "latitude": -24.764787,
+        "longitude": -53.61159346
+      }
+    ]
+  },
+  {
+    "nome": "Setor 68",
+    "coordenadas": [
+      {
+        "latitude": -24.76466868,
+        "longitude": -53.61078699
+      },
+      {
+        "latitude": -24.76460333,
+        "longitude": -53.61078699
+      },
+      {
+        "latitude": -24.76460333,
+        "longitude": -53.61058699
+      },
+      {
+        "latitude": -24.76480333,
+        "longitude": -53.61058699
+      },
+      {
+        "latitude": -24.76480333,
+        "longitude": -53.6106217
+      },
+      {
+        "latitude": -24.76498658,
+        "longitude": -53.6106217
+      },
+      {
+        "latitude": -24.76498658,
+        "longitude": -53.6108217
+      },
+      {
+        "latitude": -24.76484491,
+        "longitude": -53.6108217
+      },
+      {
+        "latitude": -24.76483141,
+        "longitude": -53.61088295
+      },
+      {
+        "latitude": -24.76466868,
+        "longitude": -53.61088295
+      },
+      {
+        "latitude": -24.76466868,
+        "longitude": -53.61078699
+      }
+    ]
+  },
+  {
+    "nome": "Setor 69",
+    "coordenadas": [
+      {
+        "latitude": -24.76427935,
+        "longitude": -53.61052285
+      },
+      {
+        "latitude": -24.76427935,
+        "longitude": -53.61032367
+      },
+      {
+        "latitude": -24.76435723,
+        "longitude": -53.61032367
+      },
+      {
+        "latitude": -24.76435723,
+        "longitude": -53.61027149
+      },
+      {
+        "latitude": -24.76455723,
+        "longitude": -53.61027149
+      },
+      {
+        "latitude": -24.76455723,
+        "longitude": -53.61047149
+      },
+      {
+        "latitude": -24.76447935,
+        "longitude": -53.61047149
+      },
+      {
+        "latitude": -24.76447935,
+        "longitude": -53.61052206
+      },
+      {
+        "latitude": -24.76427935,
+        "longitude": -53.61052285
+      }
+    ]
+  },
+  {
+    "nome": "Setor 70",
+    "coordenadas": [
+      {
+        "latitude": -24.76396751,
+        "longitude": -53.61129619
+      },
+      {
+        "latitude": -24.76376751,
+        "longitude": -53.61129619
+      },
+      {
+        "latitude": -24.76376751,
+        "longitude": -53.61109619
+      },
+      {
+        "latitude": -24.76396751,
+        "longitude": -53.61109619
+      },
+      {
+        "latitude": -24.76396751,
+        "longitude": -53.61129619
+      }
+    ]
+  },
+  {
+    "nome": "Setor 71",
+    "coordenadas": [
+      {
+        "latitude": -24.76317399,
+        "longitude": -53.61141946
+      },
+      {
+        "latitude": -24.76317399,
+        "longitude": -53.61161946
+      },
+      {
+        "latitude": -24.76297399,
+        "longitude": -53.61161946
+      },
+      {
+        "latitude": -24.76297399,
+        "longitude": -53.61141946
+      },
+      {
+        "latitude": -24.76317399,
+        "longitude": -53.61141946
+      }
+    ]
+  },
+  {
+    "nome": "Setor 72",
+    "coordenadas": [
+      {
+        "latitude": -24.76297254,
+        "longitude": -53.61069309
+      },
+      {
+        "latitude": -24.76277254,
+        "longitude": -53.61069309
+      },
+      {
+        "latitude": -24.76277254,
+        "longitude": -53.61049309
+      },
+      {
+        "latitude": -24.76297254,
+        "longitude": -53.61049309
+      },
+      {
+        "latitude": -24.76297254,
+        "longitude": -53.61069309
+      }
+    ]
+  },
+  {
+    "nome": "Setor 73",
+    "coordenadas": [
+      {
+        "latitude": -24.76257964,
+        "longitude": -53.61105101
+      },
+      {
+        "latitude": -24.76237964,
+        "longitude": -53.61105101
+      },
+      {
+        "latitude": -24.76237964,
+        "longitude": -53.61085101
+      },
+      {
+        "latitude": -24.76257964,
+        "longitude": -53.61085101
+      },
+      {
+        "latitude": -24.76257964,
+        "longitude": -53.61105101
+      }
+    ]
+  },
+  {
+    "nome": "Setor 74",
+    "coordenadas": [
+      {
+        "latitude": -24.76214862,
+        "longitude": -53.61130599
+      },
+      {
+        "latitude": -24.76234862,
+        "longitude": -53.61130599
+      },
+      {
+        "latitude": -24.76234862,
+        "longitude": -53.6113149
+      },
+      {
+        "latitude": -24.76246496,
+        "longitude": -53.6113149
+      },
+      {
+        "latitude": -24.76246496,
+        "longitude": -53.61150887
+      },
+      {
+        "latitude": -24.76226496,
+        "longitude": -53.61151022
+      },
+      {
+        "latitude": -24.76226496,
+        "longitude": -53.61150599
+      },
+      {
+        "latitude": -24.76214862,
+        "longitude": -53.61150599
+      },
+      {
+        "latitude": -24.76214862,
+        "longitude": -53.61130599
+      }
+    ]
+  },
+  {
+    "nome": "Setor 75",
+    "coordenadas": [
+      {
+        "latitude": -24.76225672,
+        "longitude": -53.6108108
+      },
+      {
+        "latitude": -24.76225672,
+        "longitude": -53.61079796
+      },
+      {
+        "latitude": -24.76245672,
+        "longitude": -53.61079796
+      },
+      {
+        "latitude": -24.76245672,
+        "longitude": -53.61080945
+      },
+      {
+        "latitude": -24.76225672,
+        "longitude": -53.6108108
+      }
+    ]
+  },
+  {
+    "nome": "Setor 76",
+    "coordenadas": [
+      {
+        "latitude": -24.7622364,
+        "longitude": -53.61096747
+      },
+      {
+        "latitude": -24.7620364,
+        "longitude": -53.61096747
+      },
+      {
+        "latitude": -24.7620364,
+        "longitude": -53.61076747
+      },
+      {
+        "latitude": -24.7622364,
+        "longitude": -53.61076747
+      },
+      {
+        "latitude": -24.7622364,
+        "longitude": -53.61096747
+      }
+    ]
+  },
+  {
+    "nome": "Setor 77",
+    "coordenadas": [
+      {
+        "latitude": -24.76156991,
+        "longitude": -53.61182036
+      },
+      {
+        "latitude": -24.76156991,
+        "longitude": -53.61163304
+      },
+      {
+        "latitude": -24.76176991,
+        "longitude": -53.61163304
+      },
+      {
+        "latitude": -24.76176991,
+        "longitude": -53.61181957
+      },
+      {
+        "latitude": -24.76156991,
+        "longitude": -53.61182036
+      }
+    ]
+  },
+  {
+    "nome": "Setor 78",
+    "coordenadas": [
+      {
+        "latitude": -24.76153344,
+        "longitude": -53.61072676
+      },
+      {
+        "latitude": -24.7615573,
+        "longitude": -53.61072676
+      },
+      {
+        "latitude": -24.7615573,
+        "longitude": -53.61061629
+      },
+      {
+        "latitude": -24.7617573,
+        "longitude": -53.61061629
+      },
+      {
+        "latitude": -24.7617573,
+        "longitude": -53.61081629
+      },
+      {
+        "latitude": -24.76173344,
+        "longitude": -53.61081629
+      },
+      {
+        "latitude": -24.76173344,
+        "longitude": -53.61092676
+      },
+      {
+        "latitude": -24.76153344,
+        "longitude": -53.61092676
+      },
+      {
+        "latitude": -24.76153344,
+        "longitude": -53.61072676
+      }
+    ]
+  }
+]

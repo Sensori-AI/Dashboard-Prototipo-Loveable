@@ -1,0 +1,2256 @@
+[
+  {
+    "nome": "Area 0",
+    "coordenadas": [
+      {
+        "latitude": -24.76643692,
+        "longitude": -53.61605876
+      },
+      {
+        "latitude": -24.76664997,
+        "longitude": -53.61606957
+      },
+      {
+        "latitude": -24.76663915,
+        "longitude": -53.61628262
+      },
+      {
+        "latitude": -24.76642611,
+        "longitude": -53.61627181
+      },
+      {
+        "latitude": -24.76643692,
+        "longitude": -53.61605876
+      }
+    ]
+  },
+  {
+    "nome": "Area 1",
+    "coordenadas": [
+      {
+        "latitude": -24.76374274,
+        "longitude": -53.61487289
+      },
+      {
+        "latitude": -24.76394483,
+        "longitude": -53.61487481
+      },
+      {
+        "latitude": -24.76394292,
+        "longitude": -53.6150769
+      },
+      {
+        "latitude": -24.76374082,
+        "longitude": -53.61507499
+      },
+      {
+        "latitude": -24.76374274,
+        "longitude": -53.61487289
+      }
+    ]
+  },
+  {
+    "nome": "Area 2",
+    "coordenadas": [
+      {
+        "latitude": -24.76431316,
+        "longitude": -53.61511795
+      },
+      {
+        "latitude": -24.76452857,
+        "longitude": -53.61515498
+      },
+      {
+        "latitude": -24.76449154,
+        "longitude": -53.61537038
+      },
+      {
+        "latitude": -24.76427613,
+        "longitude": -53.61533335
+      },
+      {
+        "latitude": -24.76431316,
+        "longitude": -53.61511795
+      }
+    ]
+  },
+  {
+    "nome": "Area 3",
+    "coordenadas": [
+      {
+        "latitude": -24.76708421,
+        "longitude": -53.61701279
+      },
+      {
+        "latitude": -24.76729851,
+        "longitude": -53.61697442
+      },
+      {
+        "latitude": -24.76733688,
+        "longitude": -53.61718872
+      },
+      {
+        "latitude": -24.76712258,
+        "longitude": -53.61722709
+      },
+      {
+        "latitude": -24.76708421,
+        "longitude": -53.61701279
+      }
+    ]
+  },
+  {
+    "nome": "Area 4",
+    "coordenadas": [
+      {
+        "latitude": -24.76477786,
+        "longitude": -53.61497423
+      },
+      {
+        "latitude": -24.76483301,
+        "longitude": -53.61497457
+      },
+      {
+        "latitude": -24.7647839,
+        "longitude": -53.61519108
+      },
+      {
+        "latitude": -24.76477653,
+        "longitude": -53.61519103
+      },
+      {
+        "latitude": -24.76477786,
+        "longitude": -53.61497423
+      }
+    ]
+  },
+  {
+    "nome": "Area 5",
+    "coordenadas": [
+      {
+        "latitude": -24.76515096,
+        "longitude": -53.61019023
+      },
+      {
+        "latitude": -24.76536196,
+        "longitude": -53.61019135
+      },
+      {
+        "latitude": -24.76538352,
+        "longitude": -53.61036191
+      },
+      {
+        "latitude": -24.76517597,
+        "longitude": -53.61038814
+      },
+      {
+        "latitude": -24.76515096,
+        "longitude": -53.61019023
+      }
+    ]
+  },
+  {
+    "nome": "Area 6",
+    "coordenadas": [
+      {
+        "latitude": -24.76435479,
+        "longitude": -53.61443308
+      },
+      {
+        "latitude": -24.76439204,
+        "longitude": -53.61463403
+      },
+      {
+        "latitude": -24.76418632,
+        "longitude": -53.61467301
+      },
+      {
+        "latitude": -24.76414892,
+        "longitude": -53.61447124
+      },
+      {
+        "latitude": -24.76435479,
+        "longitude": -53.61443308
+      }
+    ]
+  },
+  {
+    "nome": "Area 7",
+    "coordenadas": [
+      {
+        "latitude": -24.76419406,
+        "longitude": -53.61091611
+      },
+      {
+        "latitude": -24.76440566,
+        "longitude": -53.61092332
+      },
+      {
+        "latitude": -24.76439845,
+        "longitude": -53.61113492
+      },
+      {
+        "latitude": -24.76418685,
+        "longitude": -53.61112771
+      },
+      {
+        "latitude": -24.76419406,
+        "longitude": -53.61091611
+      }
+    ]
+  },
+  {
+    "nome": "Area 8",
+    "coordenadas": [
+      {
+        "latitude": -24.76237198,
+        "longitude": -53.61368334
+      },
+      {
+        "latitude": -24.76222574,
+        "longitude": -53.61369467
+      },
+      {
+        "latitude": -24.76222223,
+        "longitude": -53.6136504
+      },
+      {
+        "latitude": -24.76236891,
+        "longitude": -53.61364003
+      },
+      {
+        "latitude": -24.76237198,
+        "longitude": -53.61368334
+      }
+    ]
+  },
+  {
+    "nome": "Area 9",
+    "coordenadas": [
+      {
+        "latitude": -24.76200832,
+        "longitude": -53.610615
+      },
+      {
+        "latitude": -24.76220586,
+        "longitude": -53.6106033
+      },
+      {
+        "latitude": -24.76221756,
+        "longitude": -53.61080084
+      },
+      {
+        "latitude": -24.76202002,
+        "longitude": -53.61081254
+      },
+      {
+        "latitude": -24.76200832,
+        "longitude": -53.610615
+      }
+    ]
+  },
+  {
+    "nome": "Area 10",
+    "coordenadas": [
+      {
+        "latitude": -24.76554332,
+        "longitude": -53.61257964
+      },
+      {
+        "latitude": -24.76574993,
+        "longitude": -53.612537
+      },
+      {
+        "latitude": -24.76579257,
+        "longitude": -53.61274361
+      },
+      {
+        "latitude": -24.76558596,
+        "longitude": -53.61278625
+      },
+      {
+        "latitude": -24.76554332,
+        "longitude": -53.61257964
+      }
+    ]
+  },
+  {
+    "nome": "Area 11",
+    "coordenadas": [
+      {
+        "latitude": -24.76782297,
+        "longitude": -53.61581126
+      },
+      {
+        "latitude": -24.76782474,
+        "longitude": -53.61582215
+      },
+      {
+        "latitude": -24.76763531,
+        "longitude": -53.61585425
+      },
+      {
+        "latitude": -24.76763333,
+        "longitude": -53.61584208
+      },
+      {
+        "latitude": -24.76782297,
+        "longitude": -53.61581126
+      }
+    ]
+  },
+  {
+    "nome": "Area 12",
+    "coordenadas": [
+      {
+        "latitude": -24.76445637,
+        "longitude": -53.61184723
+      },
+      {
+        "latitude": -24.76464042,
+        "longitude": -53.61181979
+      },
+      {
+        "latitude": -24.76466785,
+        "longitude": -53.61200384
+      },
+      {
+        "latitude": -24.76448381,
+        "longitude": -53.61203128
+      },
+      {
+        "latitude": -24.76445637,
+        "longitude": -53.61184723
+      }
+    ]
+  },
+  {
+    "nome": "Area 13",
+    "coordenadas": [
+      {
+        "latitude": -24.76599132,
+        "longitude": -53.61597963
+      },
+      {
+        "latitude": -24.76598404,
+        "longitude": -53.615979
+      },
+      {
+        "latitude": -24.7659995,
+        "longitude": -53.61578155
+      },
+      {
+        "latitude": -24.76600941,
+        "longitude": -53.61578246
+      },
+      {
+        "latitude": -24.76599132,
+        "longitude": -53.61597963
+      }
+    ]
+  },
+  {
+    "nome": "Area 14",
+    "coordenadas": [
+      {
+        "latitude": -24.76282832,
+        "longitude": -53.61518792
+      },
+      {
+        "latitude": -24.76304394,
+        "longitude": -53.61517316
+      },
+      {
+        "latitude": -24.7630587,
+        "longitude": -53.61538879
+      },
+      {
+        "latitude": -24.76284307,
+        "longitude": -53.61540354
+      },
+      {
+        "latitude": -24.76282832,
+        "longitude": -53.61518792
+      }
+    ]
+  },
+  {
+    "nome": "Area 15",
+    "coordenadas": [
+      {
+        "latitude": -24.76361077,
+        "longitude": -53.611695
+      },
+      {
+        "latitude": -24.76381293,
+        "longitude": -53.61171206
+      },
+      {
+        "latitude": -24.76379587,
+        "longitude": -53.61191421
+      },
+      {
+        "latitude": -24.76359371,
+        "longitude": -53.61189716
+      },
+      {
+        "latitude": -24.76361077,
+        "longitude": -53.611695
+      }
+    ]
+  },
+  {
+    "nome": "Area 16",
+    "coordenadas": [
+      {
+        "latitude": -24.76400431,
+        "longitude": -53.61265955
+      },
+      {
+        "latitude": -24.76420742,
+        "longitude": -53.61269201
+      },
+      {
+        "latitude": -24.76417496,
+        "longitude": -53.61289512
+      },
+      {
+        "latitude": -24.76397185,
+        "longitude": -53.61286267
+      },
+      {
+        "latitude": -24.76400431,
+        "longitude": -53.61265955
+      }
+    ]
+  },
+  {
+    "nome": "Area 17",
+    "coordenadas": [
+      {
+        "latitude": -24.76710519,
+        "longitude": -53.61460211
+      },
+      {
+        "latitude": -24.76730286,
+        "longitude": -53.61456091
+      },
+      {
+        "latitude": -24.76734405,
+        "longitude": -53.61475858
+      },
+      {
+        "latitude": -24.76714639,
+        "longitude": -53.61479978
+      },
+      {
+        "latitude": -24.76710519,
+        "longitude": -53.61460211
+      }
+    ]
+  },
+  {
+    "nome": "Area 18",
+    "coordenadas": [
+      {
+        "latitude": -24.76628475,
+        "longitude": -53.61167186
+      },
+      {
+        "latitude": -24.76648527,
+        "longitude": -53.61163378
+      },
+      {
+        "latitude": -24.76652335,
+        "longitude": -53.6118343
+      },
+      {
+        "latitude": -24.76632282,
+        "longitude": -53.61187238
+      },
+      {
+        "latitude": -24.76628475,
+        "longitude": -53.61167186
+      }
+    ]
+  },
+  {
+    "nome": "Area 19",
+    "coordenadas": [
+      {
+        "latitude": -24.76490837,
+        "longitude": -53.61116526
+      },
+      {
+        "latitude": -24.7650915,
+        "longitude": -53.61114549
+      },
+      {
+        "latitude": -24.76511127,
+        "longitude": -53.61132861
+      },
+      {
+        "latitude": -24.76492814,
+        "longitude": -53.61134839
+      },
+      {
+        "latitude": -24.76490837,
+        "longitude": -53.61116526
+      }
+    ]
+  },
+  {
+    "nome": "Area 20",
+    "coordenadas": [
+      {
+        "latitude": -24.76563916,
+        "longitude": -53.61532072
+      },
+      {
+        "latitude": -24.76585327,
+        "longitude": -53.61534851
+      },
+      {
+        "latitude": -24.76582547,
+        "longitude": -53.61556262
+      },
+      {
+        "latitude": -24.76561137,
+        "longitude": -53.61553483
+      },
+      {
+        "latitude": -24.76563916,
+        "longitude": -53.61532072
+      }
+    ]
+  },
+  {
+    "nome": "Area 21",
+    "coordenadas": [
+      {
+        "latitude": -24.76599179,
+        "longitude": -53.612936
+      },
+      {
+        "latitude": -24.76619466,
+        "longitude": -53.61296224
+      },
+      {
+        "latitude": -24.76616841,
+        "longitude": -53.61316511
+      },
+      {
+        "latitude": -24.76596554,
+        "longitude": -53.61313887
+      },
+      {
+        "latitude": -24.76599179,
+        "longitude": -53.612936
+      }
+    ]
+  },
+  {
+    "nome": "Area 22",
+    "coordenadas": [
+      {
+        "latitude": -24.76394723,
+        "longitude": -53.61028596
+      },
+      {
+        "latitude": -24.76416518,
+        "longitude": -53.61029151
+      },
+      {
+        "latitude": -24.76415962,
+        "longitude": -53.61050946
+      },
+      {
+        "latitude": -24.76394167,
+        "longitude": -53.6105039
+      },
+      {
+        "latitude": -24.76394723,
+        "longitude": -53.61028596
+      }
+    ]
+  },
+  {
+    "nome": "Area 23",
+    "coordenadas": [
+      {
+        "latitude": -24.76331167,
+        "longitude": -53.61448267
+      },
+      {
+        "latitude": -24.76349803,
+        "longitude": -53.61448822
+      },
+      {
+        "latitude": -24.76349248,
+        "longitude": -53.61467458
+      },
+      {
+        "latitude": -24.76330612,
+        "longitude": -53.61466903
+      },
+      {
+        "latitude": -24.76331167,
+        "longitude": -53.61448267
+      }
+    ]
+  },
+  {
+    "nome": "Area 24",
+    "coordenadas": [
+      {
+        "latitude": -24.76824567,
+        "longitude": -53.61623534
+      },
+      {
+        "latitude": -24.76826795,
+        "longitude": -53.61643174
+      },
+      {
+        "latitude": -24.76807004,
+        "longitude": -53.61645499
+      },
+      {
+        "latitude": -24.76804767,
+        "longitude": -53.61625781
+      },
+      {
+        "latitude": -24.76824567,
+        "longitude": -53.61623534
+      }
+    ]
+  },
+  {
+    "nome": "Area 25",
+    "coordenadas": [
+      {
+        "latitude": -24.76500803,
+        "longitude": -53.61457188
+      },
+      {
+        "latitude": -24.76501493,
+        "longitude": -53.61475357
+      },
+      {
+        "latitude": -24.7648242,
+        "longitude": -53.61476157
+      },
+      {
+        "latitude": -24.76481727,
+        "longitude": -53.61457912
+      },
+      {
+        "latitude": -24.76500803,
+        "longitude": -53.61457188
+      }
+    ]
+  },
+  {
+    "nome": "Area 26",
+    "coordenadas": [
+      {
+        "latitude": -24.76231012,
+        "longitude": -53.61164617
+      },
+      {
+        "latitude": -24.76252462,
+        "longitude": -53.6116851
+      },
+      {
+        "latitude": -24.7624857,
+        "longitude": -53.6118996
+      },
+      {
+        "latitude": -24.7622712,
+        "longitude": -53.61186067
+      },
+      {
+        "latitude": -24.76231012,
+        "longitude": -53.61164617
+      }
+    ]
+  },
+  {
+    "nome": "Area 27",
+    "coordenadas": [
+      {
+        "latitude": -24.76529154,
+        "longitude": -53.61046153
+      },
+      {
+        "latitude": -24.76548882,
+        "longitude": -53.61042741
+      },
+      {
+        "latitude": -24.76552294,
+        "longitude": -53.61062469
+      },
+      {
+        "latitude": -24.76532566,
+        "longitude": -53.61065881
+      },
+      {
+        "latitude": -24.76529154,
+        "longitude": -53.61046153
+      }
+    ]
+  },
+  {
+    "nome": "Area 28",
+    "coordenadas": [
+      {
+        "latitude": -24.76744003,
+        "longitude": -53.6153907
+      },
+      {
+        "latitude": -24.76765079,
+        "longitude": -53.61540637
+      },
+      {
+        "latitude": -24.76763512,
+        "longitude": -53.61561712
+      },
+      {
+        "latitude": -24.76742436,
+        "longitude": -53.61560145
+      },
+      {
+        "latitude": -24.76744003,
+        "longitude": -53.6153907
+      }
+    ]
+  },
+  {
+    "nome": "Area 29",
+    "coordenadas": [
+      {
+        "latitude": -24.76477996,
+        "longitude": -53.61396892
+      },
+      {
+        "latitude": -24.76477616,
+        "longitude": -53.61415467
+      },
+      {
+        "latitude": -24.76457698,
+        "longitude": -53.61415138
+      },
+      {
+        "latitude": -24.7645808,
+        "longitude": -53.61396485
+      },
+      {
+        "latitude": -24.76477996,
+        "longitude": -53.61396892
+      }
+    ]
+  },
+  {
+    "nome": "Area 30",
+    "coordenadas": [
+      {
+        "latitude": -24.76207718,
+        "longitude": -53.61283126
+      },
+      {
+        "latitude": -24.76229533,
+        "longitude": -53.61281677
+      },
+      {
+        "latitude": -24.76230982,
+        "longitude": -53.61303492
+      },
+      {
+        "latitude": -24.76209167,
+        "longitude": -53.61304941
+      },
+      {
+        "latitude": -24.76207718,
+        "longitude": -53.61283126
+      }
+    ]
+  },
+  {
+    "nome": "Area 31",
+    "coordenadas": [
+      {
+        "latitude": -24.76598708,
+        "longitude": -53.61659779
+      },
+      {
+        "latitude": -24.76617674,
+        "longitude": -53.61657255
+      },
+      {
+        "latitude": -24.76620198,
+        "longitude": -53.6167622
+      },
+      {
+        "latitude": -24.76601233,
+        "longitude": -53.61678745
+      },
+      {
+        "latitude": -24.76598708,
+        "longitude": -53.61659779
+      }
+    ]
+  },
+  {
+    "nome": "Area 32",
+    "coordenadas": [
+      {
+        "latitude": -24.76513605,
+        "longitude": -53.61405762
+      },
+      {
+        "latitude": -24.76531816,
+        "longitude": -53.61402918
+      },
+      {
+        "latitude": -24.7653466,
+        "longitude": -53.61421128
+      },
+      {
+        "latitude": -24.7651645,
+        "longitude": -53.61423973
+      },
+      {
+        "latitude": -24.76513605,
+        "longitude": -53.61405762
+      }
+    ]
+  },
+  {
+    "nome": "Area 33",
+    "coordenadas": [
+      {
+        "latitude": -24.76620016,
+        "longitude": -53.61597147
+      },
+      {
+        "latitude": -24.76640126,
+        "longitude": -53.61595116
+      },
+      {
+        "latitude": -24.76642157,
+        "longitude": -53.61615226
+      },
+      {
+        "latitude": -24.76622047,
+        "longitude": -53.61617257
+      },
+      {
+        "latitude": -24.76620016,
+        "longitude": -53.61597147
+      }
+    ]
+  },
+  {
+    "nome": "Area 34",
+    "coordenadas": [
+      {
+        "latitude": -24.76597419,
+        "longitude": -53.61428989
+      },
+      {
+        "latitude": -24.76616779,
+        "longitude": -53.61427818
+      },
+      {
+        "latitude": -24.76617951,
+        "longitude": -53.61447179
+      },
+      {
+        "latitude": -24.7659859,
+        "longitude": -53.6144835
+      },
+      {
+        "latitude": -24.76597419,
+        "longitude": -53.61428989
+      }
+    ]
+  },
+  {
+    "nome": "Area 35",
+    "coordenadas": [
+      {
+        "latitude": -24.76342133,
+        "longitude": -53.61188697
+      },
+      {
+        "latitude": -24.76352492,
+        "longitude": -53.61187783
+      },
+      {
+        "latitude": -24.76349609,
+        "longitude": -53.61210029
+      },
+      {
+        "latitude": -24.76344058,
+        "longitude": -53.61210519
+      },
+      {
+        "latitude": -24.76342133,
+        "longitude": -53.61188697
+      }
+    ]
+  },
+  {
+    "nome": "Area 36",
+    "coordenadas": [
+      {
+        "latitude": -24.76380318,
+        "longitude": -53.61321984
+      },
+      {
+        "latitude": -24.76402038,
+        "longitude": -53.61320705
+      },
+      {
+        "latitude": -24.76403318,
+        "longitude": -53.61342426
+      },
+      {
+        "latitude": -24.76381597,
+        "longitude": -53.61343705
+      },
+      {
+        "latitude": -24.76380318,
+        "longitude": -53.61321984
+      }
+    ]
+  },
+  {
+    "nome": "Area 37",
+    "coordenadas": [
+      {
+        "latitude": -24.76505325,
+        "longitude": -53.61234296
+      },
+      {
+        "latitude": -24.76525356,
+        "longitude": -53.61236823
+      },
+      {
+        "latitude": -24.76522829,
+        "longitude": -53.61256854
+      },
+      {
+        "latitude": -24.76502798,
+        "longitude": -53.61254327
+      },
+      {
+        "latitude": -24.76505325,
+        "longitude": -53.61234296
+      }
+    ]
+  },
+  {
+    "nome": "Area 38",
+    "coordenadas": [
+      {
+        "latitude": -24.76224682,
+        "longitude": -53.61216863
+      },
+      {
+        "latitude": -24.76246434,
+        "longitude": -53.61216807
+      },
+      {
+        "latitude": -24.76246442,
+        "longitude": -53.61220163
+      },
+      {
+        "latitude": -24.76242437,
+        "longitude": -53.61238569
+      },
+      {
+        "latitude": -24.76224739,
+        "longitude": -53.61238615
+      },
+      {
+        "latitude": -24.76224682,
+        "longitude": -53.61216863
+      }
+    ]
+  },
+  {
+    "nome": "Area 39",
+    "coordenadas": [
+      {
+        "latitude": -24.76577635,
+        "longitude": -53.61030906
+      },
+      {
+        "latitude": -24.76598724,
+        "longitude": -53.61027756
+      },
+      {
+        "latitude": -24.76601875,
+        "longitude": -53.61048845
+      },
+      {
+        "latitude": -24.76580786,
+        "longitude": -53.61051995
+      },
+      {
+        "latitude": -24.76577635,
+        "longitude": -53.61030906
+      }
+    ]
+  },
+  {
+    "nome": "Area 40",
+    "coordenadas": [
+      {
+        "latitude": -24.76459275,
+        "longitude": -53.6148167
+      },
+      {
+        "latitude": -24.76477964,
+        "longitude": -53.61479622
+      },
+      {
+        "latitude": -24.76480012,
+        "longitude": -53.61498311
+      },
+      {
+        "latitude": -24.76461323,
+        "longitude": -53.61500359
+      },
+      {
+        "latitude": -24.76459275,
+        "longitude": -53.6148167
+      }
+    ]
+  },
+  {
+    "nome": "Area 41",
+    "coordenadas": [
+      {
+        "latitude": -24.76362569,
+        "longitude": -53.61446411
+      },
+      {
+        "latitude": -24.76382072,
+        "longitude": -53.6144866
+      },
+      {
+        "latitude": -24.76379822,
+        "longitude": -53.61468163
+      },
+      {
+        "latitude": -24.76360319,
+        "longitude": -53.61465914
+      },
+      {
+        "latitude": -24.76362569,
+        "longitude": -53.61446411
+      }
+    ]
+  },
+  {
+    "nome": "Area 42",
+    "coordenadas": [
+      {
+        "latitude": -24.7641963,
+        "longitude": -53.61024337
+      },
+      {
+        "latitude": -24.76419606,
+        "longitude": -53.61025884
+      },
+      {
+        "latitude": -24.7639778,
+        "longitude": -53.61025694
+      },
+      {
+        "latitude": -24.76397806,
+        "longitude": -53.61024
+      },
+      {
+        "latitude": -24.7641963,
+        "longitude": -53.61024337
+      }
+    ]
+  },
+  {
+    "nome": "Area 43",
+    "coordenadas": [
+      {
+        "latitude": -24.76181617,
+        "longitude": -53.61203507
+      },
+      {
+        "latitude": -24.76200998,
+        "longitude": -53.61207298
+      },
+      {
+        "latitude": -24.76197207,
+        "longitude": -53.61226679
+      },
+      {
+        "latitude": -24.76177826,
+        "longitude": -53.61222888
+      },
+      {
+        "latitude": -24.76181617,
+        "longitude": -53.61203507
+      }
+    ]
+  },
+  {
+    "nome": "Area 44",
+    "coordenadas": [
+      {
+        "latitude": -24.76796353,
+        "longitude": -53.61669716
+      },
+      {
+        "latitude": -24.76815352,
+        "longitude": -53.6167373
+      },
+      {
+        "latitude": -24.76811338,
+        "longitude": -53.61692728
+      },
+      {
+        "latitude": -24.7679234,
+        "longitude": -53.61688715
+      },
+      {
+        "latitude": -24.76796353,
+        "longitude": -53.61669716
+      }
+    ]
+  },
+  {
+    "nome": "Area 45",
+    "coordenadas": [
+      {
+        "latitude": -24.76486104,
+        "longitude": -53.61369588
+      },
+      {
+        "latitude": -24.76506515,
+        "longitude": -53.61368721
+      },
+      {
+        "latitude": -24.76507382,
+        "longitude": -53.61389133
+      },
+      {
+        "latitude": -24.7648697,
+        "longitude": -53.61389999
+      },
+      {
+        "latitude": -24.76486104,
+        "longitude": -53.61369588
+      }
+    ]
+  },
+  {
+    "nome": "Area 46",
+    "coordenadas": [
+      {
+        "latitude": -24.76618489,
+        "longitude": -53.61065165
+      },
+      {
+        "latitude": -24.76640163,
+        "longitude": -53.61064829
+      },
+      {
+        "latitude": -24.76640498,
+        "longitude": -53.61086503
+      },
+      {
+        "latitude": -24.76618825,
+        "longitude": -53.61086838
+      },
+      {
+        "latitude": -24.76618489,
+        "longitude": -53.61065165
+      }
+    ]
+  },
+  {
+    "nome": "Area 47",
+    "coordenadas": [
+      {
+        "latitude": -24.76584027,
+        "longitude": -53.61143161
+      },
+      {
+        "latitude": -24.76604691,
+        "longitude": -53.61142894
+      },
+      {
+        "latitude": -24.76604958,
+        "longitude": -53.61163558
+      },
+      {
+        "latitude": -24.76584294,
+        "longitude": -53.61163825
+      },
+      {
+        "latitude": -24.76584027,
+        "longitude": -53.61143161
+      }
+    ]
+  },
+  {
+    "nome": "Area 48",
+    "coordenadas": [
+      {
+        "latitude": -24.76567856,
+        "longitude": -53.61315278
+      },
+      {
+        "latitude": -24.76589317,
+        "longitude": -53.61318938
+      },
+      {
+        "latitude": -24.76585656,
+        "longitude": -53.61340399
+      },
+      {
+        "latitude": -24.76564196,
+        "longitude": -53.61336738
+      },
+      {
+        "latitude": -24.76567856,
+        "longitude": -53.61315278
+      }
+    ]
+  },
+  {
+    "nome": "Area 49",
+    "coordenadas": [
+      {
+        "latitude": -24.76303813,
+        "longitude": -53.61275904
+      },
+      {
+        "latitude": -24.76323595,
+        "longitude": -53.61274826
+      },
+      {
+        "latitude": -24.76324673,
+        "longitude": -53.61294608
+      },
+      {
+        "latitude": -24.76304892,
+        "longitude": -53.61295686
+      },
+      {
+        "latitude": -24.76303813,
+        "longitude": -53.61275904
+      }
+    ]
+  },
+  {
+    "nome": "Area 50",
+    "coordenadas": [
+      {
+        "latitude": -24.763541,
+        "longitude": -53.61365737
+      },
+      {
+        "latitude": -24.76354218,
+        "longitude": -53.61384886
+      },
+      {
+        "latitude": -24.76333859,
+        "longitude": -53.61385091
+      },
+      {
+        "latitude": -24.76333741,
+        "longitude": -53.61365862
+      },
+      {
+        "latitude": -24.763541,
+        "longitude": -53.61365737
+      }
+    ]
+  },
+  {
+    "nome": "Area 51",
+    "coordenadas": [
+      {
+        "latitude": -24.76720411,
+        "longitude": -53.61600788
+      },
+      {
+        "latitude": -24.76741787,
+        "longitude": -53.61603706
+      },
+      {
+        "latitude": -24.76738869,
+        "longitude": -53.61625082
+      },
+      {
+        "latitude": -24.76717493,
+        "longitude": -53.61622164
+      },
+      {
+        "latitude": -24.76720411,
+        "longitude": -53.61600788
+      }
+    ]
+  },
+  {
+    "nome": "Area 52",
+    "coordenadas": [
+      {
+        "latitude": -24.76553302,
+        "longitude": -53.61271187
+      },
+      {
+        "latitude": -24.76555286,
+        "longitude": -53.61289794
+      },
+      {
+        "latitude": -24.76536114,
+        "longitude": -53.6129197
+      },
+      {
+        "latitude": -24.76534116,
+        "longitude": -53.61273233
+      },
+      {
+        "latitude": -24.76553302,
+        "longitude": -53.61271187
+      }
+    ]
+  },
+  {
+    "nome": "Area 53",
+    "coordenadas": [
+      {
+        "latitude": -24.76173336,
+        "longitude": -53.61500327
+      },
+      {
+        "latitude": -24.76194737,
+        "longitude": -53.61502278
+      },
+      {
+        "latitude": -24.76192786,
+        "longitude": -53.61523679
+      },
+      {
+        "latitude": -24.76171385,
+        "longitude": -53.61521728
+      },
+      {
+        "latitude": -24.76173336,
+        "longitude": -53.61500327
+      }
+    ]
+  },
+  {
+    "nome": "Area 54",
+    "coordenadas": [
+      {
+        "latitude": -24.76272886,
+        "longitude": -53.61211286
+      },
+      {
+        "latitude": -24.76294288,
+        "longitude": -53.61208351
+      },
+      {
+        "latitude": -24.76297223,
+        "longitude": -53.61229752
+      },
+      {
+        "latitude": -24.76275822,
+        "longitude": -53.61232688
+      },
+      {
+        "latitude": -24.76272886,
+        "longitude": -53.61211286
+      }
+    ]
+  },
+  {
+    "nome": "Area 55",
+    "coordenadas": [
+      {
+        "latitude": -24.76557232,
+        "longitude": -53.61075735
+      },
+      {
+        "latitude": -24.76576124,
+        "longitude": -53.61079085
+      },
+      {
+        "latitude": -24.76572774,
+        "longitude": -53.61097978
+      },
+      {
+        "latitude": -24.76553882,
+        "longitude": -53.61094627
+      },
+      {
+        "latitude": -24.76557232,
+        "longitude": -53.61075735
+      }
+    ]
+  },
+  {
+    "nome": "Area 56",
+    "coordenadas": [
+      {
+        "latitude": -24.7620466,
+        "longitude": -53.61310581
+      },
+      {
+        "latitude": -24.76224398,
+        "longitude": -53.61306706
+      },
+      {
+        "latitude": -24.76228274,
+        "longitude": -53.61326444
+      },
+      {
+        "latitude": -24.76208536,
+        "longitude": -53.61330319
+      },
+      {
+        "latitude": -24.7620466,
+        "longitude": -53.61310581
+      }
+    ]
+  },
+  {
+    "nome": "Area 57",
+    "coordenadas": [
+      {
+        "latitude": -24.76447026,
+        "longitude": -53.61076095
+      },
+      {
+        "latitude": -24.76466801,
+        "longitude": -53.6107844
+      },
+      {
+        "latitude": -24.76464456,
+        "longitude": -53.61098215
+      },
+      {
+        "latitude": -24.76444681,
+        "longitude": -53.6109587
+      },
+      {
+        "latitude": -24.76447026,
+        "longitude": -53.61076095
+      }
+    ]
+  },
+  {
+    "nome": "Area 58",
+    "coordenadas": [
+      {
+        "latitude": -24.76176835,
+        "longitude": -53.61032796
+      },
+      {
+        "latitude": -24.76196303,
+        "longitude": -53.61029613
+      },
+      {
+        "latitude": -24.76199486,
+        "longitude": -53.6104908
+      },
+      {
+        "latitude": -24.76180019,
+        "longitude": -53.61052264
+      },
+      {
+        "latitude": -24.76176835,
+        "longitude": -53.61032796
+      }
+    ]
+  },
+  {
+    "nome": "Area 59",
+    "coordenadas": [
+      {
+        "latitude": -24.76597519,
+        "longitude": -53.61171068
+      },
+      {
+        "latitude": -24.76619466,
+        "longitude": -53.61170349
+      },
+      {
+        "latitude": -24.76620185,
+        "longitude": -53.61192297
+      },
+      {
+        "latitude": -24.76598237,
+        "longitude": -53.61193015
+      },
+      {
+        "latitude": -24.76597519,
+        "longitude": -53.61171068
+      }
+    ]
+  },
+  {
+    "nome": "Area 60",
+    "coordenadas": [
+      {
+        "latitude": -24.76453288,
+        "longitude": -53.61431925
+      },
+      {
+        "latitude": -24.76474259,
+        "longitude": -53.61432011
+      },
+      {
+        "latitude": -24.76474173,
+        "longitude": -53.61452981
+      },
+      {
+        "latitude": -24.76453202,
+        "longitude": -53.61452896
+      },
+      {
+        "latitude": -24.76453288,
+        "longitude": -53.61431925
+      }
+    ]
+  },
+  {
+    "nome": "Area 61",
+    "coordenadas": [
+      {
+        "latitude": -24.76783232,
+        "longitude": -53.61637488
+      },
+      {
+        "latitude": -24.76803821,
+        "longitude": -53.61637
+      },
+      {
+        "latitude": -24.76804309,
+        "longitude": -53.61657589
+      },
+      {
+        "latitude": -24.76783719,
+        "longitude": -53.61658077
+      },
+      {
+        "latitude": -24.76783232,
+        "longitude": -53.61637488
+      }
+    ]
+  },
+  {
+    "nome": "Area 62",
+    "coordenadas": [
+      {
+        "latitude": -24.76484453,
+        "longitude": -53.61088591
+      },
+      {
+        "latitude": -24.7648509,
+        "longitude": -53.61105236
+      },
+      {
+        "latitude": -24.76466538,
+        "longitude": -53.61106019
+      },
+      {
+        "latitude": -24.76465898,
+        "longitude": -53.610893
+      },
+      {
+        "latitude": -24.76484453,
+        "longitude": -53.61088591
+      }
+    ]
+  },
+  {
+    "nome": "Area 63",
+    "coordenadas": [
+      {
+        "latitude": -24.76835823,
+        "longitude": -53.61521643
+      },
+      {
+        "latitude": -24.76857151,
+        "longitude": -53.6152295
+      },
+      {
+        "latitude": -24.76855844,
+        "longitude": -53.61544278
+      },
+      {
+        "latitude": -24.76834516,
+        "longitude": -53.61542971
+      },
+      {
+        "latitude": -24.76835823,
+        "longitude": -53.61521643
+      }
+    ]
+  },
+  {
+    "nome": "Area 64",
+    "coordenadas": [
+      {
+        "latitude": -24.76792932,
+        "longitude": -53.61589463
+      },
+      {
+        "latitude": -24.76814386,
+        "longitude": -53.61584978
+      },
+      {
+        "latitude": -24.7681887,
+        "longitude": -53.61606432
+      },
+      {
+        "latitude": -24.76797416,
+        "longitude": -53.61610916
+      },
+      {
+        "latitude": -24.76792932,
+        "longitude": -53.61589463
+      }
+    ]
+  },
+  {
+    "nome": "Area 65",
+    "coordenadas": [
+      {
+        "latitude": -24.7623322,
+        "longitude": -53.61046035
+      },
+      {
+        "latitude": -24.76254346,
+        "longitude": -53.6104342
+      },
+      {
+        "latitude": -24.7625696,
+        "longitude": -53.61064546
+      },
+      {
+        "latitude": -24.76235835,
+        "longitude": -53.61067161
+      },
+      {
+        "latitude": -24.7623322,
+        "longitude": -53.61046035
+      }
+    ]
+  },
+  {
+    "nome": "Area 66",
+    "coordenadas": [
+      {
+        "latitude": -24.76641685,
+        "longitude": -53.61242616
+      },
+      {
+        "latitude": -24.76639713,
+        "longitude": -53.61242497
+      },
+      {
+        "latitude": -24.76640743,
+        "longitude": -53.61220677
+      },
+      {
+        "latitude": -24.76643006,
+        "longitude": -53.61220814
+      },
+      {
+        "latitude": -24.76641685,
+        "longitude": -53.61242616
+      }
+    ]
+  },
+  {
+    "nome": "Area 67",
+    "coordenadas": [
+      {
+        "latitude": -24.76388961,
+        "longitude": -53.61215375
+      },
+      {
+        "latitude": -24.76410608,
+        "longitude": -53.61217247
+      },
+      {
+        "latitude": -24.76408737,
+        "longitude": -53.61238894
+      },
+      {
+        "latitude": -24.7638709,
+        "longitude": -53.61237022
+      },
+      {
+        "latitude": -24.76388961,
+        "longitude": -53.61215375
+      }
+    ]
+  },
+  {
+    "nome": "Area 68",
+    "coordenadas": [
+      {
+        "latitude": -24.76451862,
+        "longitude": -53.61377303
+      },
+      {
+        "latitude": -24.76471178,
+        "longitude": -53.61378433
+      },
+      {
+        "latitude": -24.76470048,
+        "longitude": -53.61397749
+      },
+      {
+        "latitude": -24.76450732,
+        "longitude": -53.61396619
+      },
+      {
+        "latitude": -24.76451862,
+        "longitude": -53.61377303
+      }
+    ]
+  },
+  {
+    "nome": "Area 69",
+    "coordenadas": [
+      {
+        "latitude": -24.76473819,
+        "longitude": -53.61522683
+      },
+      {
+        "latitude": -24.76493827,
+        "longitude": -53.61521384
+      },
+      {
+        "latitude": -24.76495126,
+        "longitude": -53.61541391
+      },
+      {
+        "latitude": -24.76475118,
+        "longitude": -53.61542691
+      },
+      {
+        "latitude": -24.76473819,
+        "longitude": -53.61522683
+      }
+    ]
+  },
+  {
+    "nome": "Area 70",
+    "coordenadas": [
+      {
+        "latitude": -24.76312316,
+        "longitude": -53.61211094
+      },
+      {
+        "latitude": -24.76332986,
+        "longitude": -53.61211065
+      },
+      {
+        "latitude": -24.76333016,
+        "longitude": -53.61231735
+      },
+      {
+        "latitude": -24.76312345,
+        "longitude": -53.61231765
+      },
+      {
+        "latitude": -24.76312316,
+        "longitude": -53.61211094
+      }
+    ]
+  },
+  {
+    "nome": "Area 71",
+    "coordenadas": [
+      {
+        "latitude": -24.76646062,
+        "longitude": -53.61663424
+      },
+      {
+        "latitude": -24.76665822,
+        "longitude": -53.61664195
+      },
+      {
+        "latitude": -24.76665051,
+        "longitude": -53.61683955
+      },
+      {
+        "latitude": -24.76645291,
+        "longitude": -53.61683184
+      },
+      {
+        "latitude": -24.76646062,
+        "longitude": -53.61663424
+      }
+    ]
+  },
+  {
+    "nome": "Area 72",
+    "coordenadas": [
+      {
+        "latitude": -24.76299891,
+        "longitude": -53.61091974
+      },
+      {
+        "latitude": -24.7629591,
+        "longitude": -53.61111109
+      },
+      {
+        "latitude": -24.76275289,
+        "longitude": -53.61106905
+      },
+      {
+        "latitude": -24.76279287,
+        "longitude": -53.61087687
+      },
+      {
+        "latitude": -24.76299891,
+        "longitude": -53.61091974
+      }
+    ]
+  },
+  {
+    "nome": "Area 73",
+    "coordenadas": [
+      {
+        "latitude": -24.76376193,
+        "longitude": -53.61368893
+      },
+      {
+        "latitude": -24.76397966,
+        "longitude": -53.61366348
+      },
+      {
+        "latitude": -24.7640051,
+        "longitude": -53.61388121
+      },
+      {
+        "latitude": -24.76378737,
+        "longitude": -53.61390666
+      },
+      {
+        "latitude": -24.76376193,
+        "longitude": -53.61368893
+      }
+    ]
+  },
+  {
+    "nome": "Area 74",
+    "coordenadas": [
+      {
+        "latitude": -24.76260473,
+        "longitude": -53.61275427
+      },
+      {
+        "latitude": -24.76280987,
+        "longitude": -53.61273154
+      },
+      {
+        "latitude": -24.76283259,
+        "longitude": -53.61293668
+      },
+      {
+        "latitude": -24.76262745,
+        "longitude": -53.61295941
+      },
+      {
+        "latitude": -24.76260473,
+        "longitude": -53.61275427
+      }
+    ]
+  },
+  {
+    "nome": "Area 75",
+    "coordenadas": [
+      {
+        "latitude": -24.76374977,
+        "longitude": -53.61419756
+      },
+      {
+        "latitude": -24.76375098,
+        "longitude": -53.61423219
+      },
+      {
+        "latitude": -24.76354143,
+        "longitude": -53.61424092
+      },
+      {
+        "latitude": -24.76354017,
+        "longitude": -53.61420488
+      },
+      {
+        "latitude": -24.76374977,
+        "longitude": -53.61419756
+      }
+    ]
+  },
+  {
+    "nome": "Area 76",
+    "coordenadas": [
+      {
+        "latitude": -24.76679672,
+        "longitude": -53.61615658
+      },
+      {
+        "latitude": -24.76700911,
+        "longitude": -53.61616655
+      },
+      {
+        "latitude": -24.76699914,
+        "longitude": -53.61637894
+      },
+      {
+        "latitude": -24.76678674,
+        "longitude": -53.61636897
+      },
+      {
+        "latitude": -24.76679672,
+        "longitude": -53.61615658
+      }
+    ]
+  },
+  {
+    "nome": "Area 77",
+    "coordenadas": [
+      {
+        "latitude": -24.76810451,
+        "longitude": -53.61501369
+      },
+      {
+        "latitude": -24.76830913,
+        "longitude": -53.61500992
+      },
+      {
+        "latitude": -24.7683129,
+        "longitude": -53.61521454
+      },
+      {
+        "latitude": -24.76810828,
+        "longitude": -53.6152183
+      },
+      {
+        "latitude": -24.76810451,
+        "longitude": -53.61501369
+      }
+    ]
+  },
+  {
+    "nome": "Area 78",
+    "coordenadas": [
+      {
+        "latitude": -24.76537454,
+        "longitude": -53.6123384
+      },
+      {
+        "latitude": -24.76556034,
+        "longitude": -53.61236406
+      },
+      {
+        "latitude": -24.76553469,
+        "longitude": -53.61254987
+      },
+      {
+        "latitude": -24.76534888,
+        "longitude": -53.61252421
+      },
+      {
+        "latitude": -24.76537454,
+        "longitude": -53.6123384
+      }
+    ]
+  },
+  {
+    "nome": "Area 79",
+    "coordenadas": [
+      {
+        "latitude": -24.76278311,
+        "longitude": -53.61349965
+      },
+      {
+        "latitude": -24.76298343,
+        "longitude": -53.61349009
+      },
+      {
+        "latitude": -24.76299299,
+        "longitude": -53.61369041
+      },
+      {
+        "latitude": -24.76279266,
+        "longitude": -53.61369997
+      },
+      {
+        "latitude": -24.76278311,
+        "longitude": -53.61349965
+      }
+    ]
+  },
+  {
+    "nome": "Area 80",
+    "coordenadas": [
+      {
+        "latitude": -24.76588524,
+        "longitude": -53.611016
+      },
+      {
+        "latitude": -24.76609924,
+        "longitude": -53.61104091
+      },
+      {
+        "latitude": -24.76607433,
+        "longitude": -53.61125491
+      },
+      {
+        "latitude": -24.76586033,
+        "longitude": -53.61123
+      },
+      {
+        "latitude": -24.76588524,
+        "longitude": -53.611016
+      }
+    ]
+  },
+  {
+    "nome": "Area 81",
+    "coordenadas": [
+      {
+        "latitude": -24.76221192,
+        "longitude": -53.61148171
+      },
+      {
+        "latitude": -24.76218201,
+        "longitude": -53.61147793
+      },
+      {
+        "latitude": -24.76220549,
+        "longitude": -53.61126986
+      },
+      {
+        "latitude": -24.76223817,
+        "longitude": -53.61127399
+      },
+      {
+        "latitude": -24.76221192,
+        "longitude": -53.61148171
+      }
+    ]
+  },
+  {
+    "nome": "Area 82",
+    "coordenadas": [
+      {
+        "latitude": -24.76374012,
+        "longitude": -53.61131569
+      },
+      {
+        "latitude": -24.76392521,
+        "longitude": -53.61134627
+      },
+      {
+        "latitude": -24.76389463,
+        "longitude": -53.61153136
+      },
+      {
+        "latitude": -24.76370954,
+        "longitude": -53.61150078
+      },
+      {
+        "latitude": -24.76374012,
+        "longitude": -53.61131569
+      }
+    ]
+  },
+  {
+    "nome": "Area 83",
+    "coordenadas": [
+      {
+        "latitude": -24.76579017,
+        "longitude": -53.61397096
+      },
+      {
+        "latitude": -24.76600025,
+        "longitude": -53.61399516
+      },
+      {
+        "latitude": -24.76597605,
+        "longitude": -53.61420524
+      },
+      {
+        "latitude": -24.76576597,
+        "longitude": -53.61418104
+      },
+      {
+        "latitude": -24.76579017,
+        "longitude": -53.61397096
+      }
+    ]
+  },
+  {
+    "nome": "Area 84",
+    "coordenadas": [
+      {
+        "latitude": -24.76535586,
+        "longitude": -53.61381576
+      },
+      {
+        "latitude": -24.76556383,
+        "longitude": -53.6137924
+      },
+      {
+        "latitude": -24.76558719,
+        "longitude": -53.61400037
+      },
+      {
+        "latitude": -24.76537922,
+        "longitude": -53.61402373
+      },
+      {
+        "latitude": -24.76535586,
+        "longitude": -53.61381576
+      }
+    ]
+  },
+  {
+    "nome": "Area 85",
+    "coordenadas": [
+      {
+        "latitude": -24.76510194,
+        "longitude": -53.61218553
+      },
+      {
+        "latitude": -24.76529411,
+        "longitude": -53.61218771
+      },
+      {
+        "latitude": -24.76529193,
+        "longitude": -53.61237987
+      },
+      {
+        "latitude": -24.76509977,
+        "longitude": -53.6123777
+      },
+      {
+        "latitude": -24.76510194,
+        "longitude": -53.61218553
+      }
+    ]
+  },
+  {
+    "nome": "Area 86",
+    "coordenadas": [
+      {
+        "latitude": -24.76521863,
+        "longitude": -53.61117591
+      },
+      {
+        "latitude": -24.76541447,
+        "longitude": -53.61116366
+      },
+      {
+        "latitude": -24.76542671,
+        "longitude": -53.61135949
+      },
+      {
+        "latitude": -24.76523088,
+        "longitude": -53.61137174
+      },
+      {
+        "latitude": -24.76521863,
+        "longitude": -53.61117591
+      }
+    ]
+  },
+  {
+    "nome": "Area 87",
+    "coordenadas": [
+      {
+        "latitude": -24.76632637,
+        "longitude": -53.61534036
+      },
+      {
+        "latitude": -24.76652866,
+        "longitude": -53.61535308
+      },
+      {
+        "latitude": -24.76651593,
+        "longitude": -53.61555537
+      },
+      {
+        "latitude": -24.76631365,
+        "longitude": -53.61554265
+      },
+      {
+        "latitude": -24.76632637,
+        "longitude": -53.61534036
+      }
+    ]
+  },
+  {
+    "nome": "Area 88",
+    "coordenadas": [
+      {
+        "latitude": -24.76415138,
+        "longitude": -53.6134435
+      },
+      {
+        "latitude": -24.7643494,
+        "longitude": -53.61342205
+      },
+      {
+        "latitude": -24.76437084,
+        "longitude": -53.61362007
+      },
+      {
+        "latitude": -24.76417283,
+        "longitude": -53.61364151
+      },
+      {
+        "latitude": -24.76415138,
+        "longitude": -53.6134435
+      }
+    ]
+  },
+  {
+    "nome": "Area 89",
+    "coordenadas": [
+      {
+        "latitude": -24.76425769,
+        "longitude": -53.61325192
+      },
+      {
+        "latitude": -24.76445013,
+        "longitude": -53.61326781
+      },
+      {
+        "latitude": -24.76443424,
+        "longitude": -53.61346026
+      },
+      {
+        "latitude": -24.76424179,
+        "longitude": -53.61344436
+      },
+      {
+        "latitude": -24.76425769,
+        "longitude": -53.61325192
+      }
+    ]
+  }
+]

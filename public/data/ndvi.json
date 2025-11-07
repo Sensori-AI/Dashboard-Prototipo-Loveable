@@ -1,0 +1,48 @@
+{
+  "relatorio_vigor_vegetativo": {
+    "imagem_entrada": "foto_teste_1.tif",
+    "total_pixels_analisados": 16774480,
+    "faixas_cores": [
+      {
+        "cor": "Vermelho Escuro",
+        "descricao": "Baixo Vigor",
+        "condicao_exg": "ExG < 90"
+      },
+      {
+        "cor": "Amarelo Claro",
+        "descricao": "Vigor Intermediário",
+        "condicao_exg": "90 <= ExG < 110"
+      },
+      {
+        "cor": "Verde Suave",
+        "descricao": "Alto Vigor",
+        "condicao_exg": "ExG >= 110"
+      }
+    ],
+    "estatisticas_cobertura": [
+      {
+        "cor": "Vermelho",
+        "vigor": "Baixo",
+        "contagem_pixels": 1698094,
+        "porcentagem": 10.12
+      },
+      {
+        "cor": "Amarelo",
+        "vigor": "Intermediário",
+        "contagem_pixels": 8791702,
+        "porcentagem": 52.41
+      },
+      {
+        "cor": "Verde",
+        "vigor": "Alto",
+        "contagem_pixels": 6284684,
+        "porcentagem": 37.47
+      }
+    ],
+    "total": {
+      "pixels": 16774480,
+      "porcentagem": 100.0,
+      "observacao": "Deve ser aproximadamente 100.00%"
+    }
+  }
+}

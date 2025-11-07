@@ -32,8 +32,12 @@ export function AppSidebar() {
             <Sprout className="h-5 w-5 text-primary-foreground" />
           </div>
           <div>
-            <h2 className="font-bold text-sidebar-foreground text-lg">sensoriAI</h2>
-            <p className="text-xs text-sidebar-foreground/60">Análise Agrícola</p>
+            <h2 className="font-bold text-sidebar-foreground text-lg">
+              sensoriAI
+            </h2>
+            <p className="text-xs text-sidebar-foreground/60">
+              Análise Agrícola
+            </p>
           </div>
         </div>
       </SidebarHeader>
@@ -46,7 +50,7 @@ export function AppSidebar() {
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <NavLink 
+                    <NavLink
                       to={item.url}
                       end
                       className={({ isActive }) =>
