@@ -19,6 +19,7 @@ import {
   Building2
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { ContactForm } from "@/components/ContactForm";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -149,7 +150,7 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="container py-20 md:py-32">
+      <section className="container py-20 md:py-32 animate-fade-in">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
           <div className="space-y-6">
             <Badge variant="secondary" className="w-fit">
@@ -167,7 +168,7 @@ const Index = () => {
                 Começar Agora
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="text-base">
+              <Button size="lg" variant="outline" className="text-base" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
                 Solicitar Demonstração
               </Button>
             </div>
@@ -198,7 +199,7 @@ const Index = () => {
       </section>
 
       {/* Dashboard Access Section */}
-      <section className="bg-primary/5 py-12 border-y border-border">
+      <section className="bg-primary/5 py-12 border-y border-border animate-fade-in">
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="space-y-2 text-center md:text-left">
@@ -216,7 +217,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="container py-20">
+      <section id="features" className="container py-20 animate-fade-in">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             Tecnologia que Impulsiona o Agronegócio
@@ -227,7 +228,7 @@ const Index = () => {
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
-            <Card key={index} className="p-6 space-y-4 hover:shadow-lg transition-shadow">
+            <Card key={index} className="p-6 space-y-4 hover:shadow-lg transition-shadow animate-scale-in" style={{ animationDelay: `${index * 100}ms` }}>
               <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
                 <feature.icon className="h-6 w-6 text-primary" />
               </div>
@@ -253,7 +254,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="container py-20">
+      <section id="about" className="container py-20 animate-fade-in">
         <div className="grid gap-12 lg:grid-cols-2 items-center">
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -291,7 +292,7 @@ const Index = () => {
       </section>
 
       {/* Plans Section */}
-      <section id="plans" className="bg-muted/50 py-20">
+      <section id="plans" className="bg-muted/50 py-20 animate-fade-in">
         <div className="container">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -305,7 +306,8 @@ const Index = () => {
             {plans.map((plan, index) => (
               <Card 
                 key={index} 
-                className={`p-8 space-y-6 ${plan.featured ? 'border-primary border-2 shadow-lg scale-105' : ''}`}
+                className={`p-8 space-y-6 ${plan.featured ? 'border-primary border-2 shadow-lg scale-105' : ''} animate-scale-in`}
+                style={{ animationDelay: `${index * 150}ms` }}
               >
                 {plan.featured && (
                   <Badge className="w-fit">Mais Popular</Badge>
@@ -338,7 +340,7 @@ const Index = () => {
       </section>
 
       {/* Integrations Section */}
-      <section className="container py-20">
+      <section className="container py-20 animate-fade-in">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             Integração Completa
@@ -379,7 +381,7 @@ const Index = () => {
       </section>
 
       {/* Security Section */}
-      <section className="bg-muted/30 py-16">
+      <section className="bg-muted/30 py-16 animate-fade-in">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <Lock className="h-12 w-12 text-primary mx-auto" />
@@ -398,7 +400,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="container py-20">
+      <section className="container py-20 animate-fade-in">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             O Que Nossos Clientes Dizem
@@ -409,7 +411,7 @@ const Index = () => {
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="p-6 space-y-4">
+            <Card key={index} className="p-6 space-y-4 animate-scale-in" style={{ animationDelay: `${index * 100}ms` }}>
               <div className="flex gap-1">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-accent text-accent" />
@@ -432,7 +434,7 @@ const Index = () => {
       </section>
 
       {/* Partners Section */}
-      <section className="bg-muted/50 py-16">
+      <section className="bg-muted/50 py-16 animate-fade-in">
         <div className="container text-center space-y-8">
           <h3 className="text-2xl font-bold text-foreground">Empresas que Confiam na SensoriAI</h3>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
@@ -446,6 +448,19 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Contact Form Section */}
+      <section id="contact" className="container py-20 animate-fade-in">
+        <div className="text-center space-y-4 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            Entre em Contato
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Preencha o formulário e nossa equipe entrará em contato para apresentar a plataforma
+          </p>
+        </div>
+        <ContactForm />
+      </section>
+
       {/* Final CTA Section */}
       <section className="bg-primary text-primary-foreground py-20">
         <div className="container text-center space-y-6">
@@ -456,10 +471,10 @@ const Index = () => {
             Teste gratuitamente por 14 dias. Sem necessidade de cartão de crédito.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button size="lg" variant="secondary" onClick={() => navigate('/dashboard')}>
+            <Button size="lg" variant="secondary" onClick={() => navigate('/auth')}>
               Começar Teste Gratuito
             </Button>
-            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Agendar Demonstração
             </Button>
           </div>
