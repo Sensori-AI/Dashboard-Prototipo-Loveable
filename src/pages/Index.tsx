@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { 
   Leaf, 
   Brain, 
@@ -28,9 +29,58 @@ import {
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ContactForm } from "@/components/ContactForm";
+import { useState } from "react";
 
 const Index = () => {
   const navigate = useNavigate();
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+
+  const videoTestimonials = [
+    {
+      id: "1",
+      name: "João Silva",
+      farm: "Fazenda Santa Clara",
+      location: "Mato Grosso • 2.500 hectares",
+      quote: "Reduzimos 32% dos custos com defensivos no primeiro ano. A precisão da análise de IA é impressionante.",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder - substituir por vídeo real
+      gradientFrom: "primary/20",
+      gradientTo: "primary/5",
+      iconColor: "primary"
+    },
+    {
+      id: "2",
+      name: "Maria Oliveira",
+      farm: "AgroTech Sul",
+      location: "Goiás • 4.200 hectares",
+      quote: "Conseguimos identificar problemas 2 semanas antes do que identificávamos manualmente. Isso salvou nossa safra.",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder - substituir por vídeo real
+      gradientFrom: "secondary/20",
+      gradientTo: "secondary/5",
+      iconColor: "secondary"
+    },
+    {
+      id: "3",
+      name: "Carlos Mendes",
+      farm: "Grupo Agrícola CM",
+      location: "Bahia • 8.500 hectares",
+      quote: "A plataforma escala perfeitamente. Gerenciamos 5 fazendas diferentes de um único dashboard com dados em tempo real.",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder - substituir por vídeo real
+      gradientFrom: "accent/20",
+      gradientTo: "accent/5",
+      iconColor: "accent"
+    }
+  ];
+
+  const handleVideoClick = (videoUrl: string) => {
+    setSelectedVideo(videoUrl);
+    setIsVideoModalOpen(true);
+  };
+
+  const closeVideoModal = () => {
+    setIsVideoModalOpen(false);
+    setTimeout(() => setSelectedVideo(null), 300); // Delay para animação de fechamento
+  };
 
   const features = [
     {
@@ -538,82 +588,63 @@ const Index = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {/* Video Testimonial 1 */}
-          <Card className="overflow-hidden group cursor-pointer hover:shadow-xl transition-all animate-fade-in" style={{ animationDelay: '0ms' }}>
-            <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors" />
-              <Play className="h-16 w-16 text-primary group-hover:scale-110 transition-transform" />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                <p className="text-white text-sm font-semibold">João Silva - Fazenda Santa Clara</p>
+          {videoTestimonials.map((testimonial, index) => (
+            <Card 
+              key={testimonial.id}
+              className="overflow-hidden group cursor-pointer hover:shadow-xl transition-all animate-fade-in" 
+              style={{ animationDelay: `${index * 100}ms` }}
+              onClick={() => handleVideoClick(testimonial.videoUrl)}
+            >
+              <div className={`relative aspect-video bg-gradient-to-br from-${testimonial.gradientFrom} to-${testimonial.gradientTo} flex items-center justify-center`}>
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors" />
+                <div className="relative z-10">
+                  <Play className={`h-16 w-16 text-${testimonial.iconColor} group-hover:scale-110 transition-transform drop-shadow-lg`} />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                  <p className="text-white text-sm font-semibold">{testimonial.name} - {testimonial.farm}</p>
+                </div>
               </div>
-            </div>
-            <div className="p-6 space-y-3">
-              <div className="flex gap-1 mb-2">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                ))}
+              <div className="p-6 space-y-3">
+                <div className="flex gap-1 mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  "{testimonial.quote}"
+                </p>
+                <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                  <MapPin className="h-3 w-3" />
+                  <span>{testimonial.location}</span>
+                </div>
               </div>
-              <p className="text-sm text-muted-foreground">
-                "Reduzimos 32% dos custos com defensivos no primeiro ano. A precisão da análise de IA é impressionante."
-              </p>
-              <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <MapPin className="h-3 w-3" />
-                <span>Mato Grosso • 2.500 hectares</span>
-              </div>
-            </div>
-          </Card>
-
-          {/* Video Testimonial 2 */}
-          <Card className="overflow-hidden group cursor-pointer hover:shadow-xl transition-all animate-fade-in" style={{ animationDelay: '100ms' }}>
-            <div className="relative aspect-video bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center">
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors" />
-              <Play className="h-16 w-16 text-secondary group-hover:scale-110 transition-transform" />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                <p className="text-white text-sm font-semibold">Maria Oliveira - AgroTech Sul</p>
-              </div>
-            </div>
-            <div className="p-6 space-y-3">
-              <div className="flex gap-1 mb-2">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <p className="text-sm text-muted-foreground">
-                "Conseguimos identificar problemas 2 semanas antes do que identificávamos manualmente. Isso salvou nossa safra."
-              </p>
-              <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <MapPin className="h-3 w-3" />
-                <span>Goiás • 4.200 hectares</span>
-              </div>
-            </div>
-          </Card>
-
-          {/* Video Testimonial 3 */}
-          <Card className="overflow-hidden group cursor-pointer hover:shadow-xl transition-all animate-fade-in" style={{ animationDelay: '200ms' }}>
-            <div className="relative aspect-video bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors" />
-              <Play className="h-16 w-16 text-accent group-hover:scale-110 transition-transform" />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                <p className="text-white text-sm font-semibold">Carlos Mendes - Grupo Agrícola CM</p>
-              </div>
-            </div>
-            <div className="p-6 space-y-3">
-              <div className="flex gap-1 mb-2">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <p className="text-sm text-muted-foreground">
-                "A plataforma escala perfeitamente. Gerenciamos 5 fazendas diferentes de um único dashboard com dados em tempo real."
-              </p>
-              <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <MapPin className="h-3 w-3" />
-                <span>Bahia • 8.500 hectares</span>
-              </div>
-            </div>
-          </Card>
+            </Card>
+          ))}
         </div>
       </section>
+
+      {/* Video Modal */}
+      <Dialog open={isVideoModalOpen} onOpenChange={closeVideoModal}>
+        <DialogContent className="max-w-4xl w-full p-0 overflow-hidden bg-background border-2">
+          <DialogHeader className="p-6 pb-0">
+            <DialogTitle className="text-2xl font-bold">Depoimento do Cliente</DialogTitle>
+          </DialogHeader>
+          <div className="aspect-video w-full bg-black">
+            {selectedVideo && (
+              <iframe
+                width="100%"
+                height="100%"
+                src={selectedVideo}
+                title="Depoimento em vídeo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
 
       {/* Before/After Gallery Section */}
       <section className="container py-20 animate-fade-in bg-muted/20">
