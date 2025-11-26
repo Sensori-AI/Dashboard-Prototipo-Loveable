@@ -26,100 +26,101 @@ const Index = () => {
 
   const features = [
     {
-      icon: Satellite,
-      title: "Monitoramento Inteligente",
-      description: "Acompanhe sua lavoura em tempo real com mapas de alta resolução, análise de vigor e detecção de anomalias."
-    },
-    {
       icon: Brain,
-      title: "Tomada de Decisão Baseada em IA",
-      description: "Relatórios automáticos com recomendações precisas geradas por inteligência artificial agronômica."
+      title: "Inteligência Artificial Aplicada",
+      description: "Desenvolvemos soluções com IA de ponta que transformam dados em insights estratégicos para seu negócio."
     },
     {
-      icon: TrendingDown,
-      title: "Redução de Custos Operacionais",
-      description: "Otimize o uso de insumos, identifique falhas de plantio e reduza desperdícios em até 30%."
+      icon: Cpu,
+      title: "Plataformas Escaláveis",
+      description: "Sistemas robustos e escaláveis que crescem com sua operação, suportando de startups a grandes corporações."
     },
     {
-      icon: BarChart3,
-      title: "Gestão Integrada de Talhões",
-      description: "Visualize todos os setores da propriedade em um único painel com métricas atualizadas."
+      icon: Zap,
+      title: "Desenvolvimento Ágil",
+      description: "Entregamos soluções de software de alta qualidade com metodologias ágeis e tecnologias modernas."
+    },
+    {
+      icon: Database,
+      title: "Soluções Multi-Setoriais",
+      description: "Experiência em desenvolver sistemas para diversos setores: agronegócio, varejo, logística, saúde e mais."
     }
   ];
 
   const plans = [
     {
-      name: "Starter",
-      price: "R$ 297",
-      period: "/mês",
-      description: "Para pequenos produtores",
-      features: [
-        "Até 100 hectares",
-        "3 usuários inclusos",
-        "Mapas de vigor e daninhas",
-        "Relatórios mensais",
-        "Suporte por email"
-      ]
-    },
-    {
-      name: "Profissional",
-      price: "R$ 897",
-      period: "/mês",
-      description: "Fazendas médias e equipes",
-      featured: true,
-      features: [
-        "Até 500 hectares",
-        "10 usuários inclusos",
-        "Todos os mapas e análises",
-        "Relatórios semanais com IA",
-        "Integrações avançadas",
-        "Suporte prioritário"
-      ]
-    },
-    {
-      name: "Empresarial",
+      name: "Projeto Sob Medida",
       price: "Sob consulta",
       period: "",
-      description: "Grandes operações",
+      description: "Desenvolvimento customizado",
       features: [
-        "Hectares ilimitados",
-        "Usuários ilimitados",
-        "API personalizada",
-        "Consultoria especializada",
-        "SLA garantido",
-        "Treinamento in loco"
+        "Levantamento completo de requisitos",
+        "Arquitetura sob medida para seu negócio",
+        "Desenvolvimento ágil com entregas iterativas",
+        "Integração com sistemas existentes",
+        "Documentação técnica completa",
+        "Garantia e suporte pós-lançamento"
+      ]
+    },
+    {
+      name: "Squad Dedicado",
+      price: "Sob consulta",
+      period: "",
+      description: "Time exclusivo para seu projeto",
+      featured: true,
+      features: [
+        "Equipe completa alocada (dev, design, QA)",
+        "Metodologia ágil com sprints semanais",
+        "Desenvolvimento contínuo e evolutivo",
+        "Acesso direto ao time técnico",
+        "Infraestrutura e DevOps inclusos",
+        "Flexibilidade para mudanças de escopo"
+      ]
+    },
+    {
+      name: "Consultoria Técnica",
+      price: "Sob consulta",
+      period: "",
+      description: "Orientação especializada",
+      features: [
+        "Análise de arquitetura e código existente",
+        "Recomendações de IA e tecnologias",
+        "Revisão de performance e escalabilidade",
+        "Treinamento técnico para equipes",
+        "Definição de roadmap tecnológico",
+        "Suporte para decisões estratégicas"
       ]
     }
   ];
 
   const testimonials = [
     {
-      name: "Roberto Ferreira",
-      role: "Gerente de Operações",
-      company: "Fazenda Santa Clara",
-      content: "Com a SensoriAI conseguimos reduzir 25% no uso de defensivos identificando focos de daninhas com precisão. A plataforma se pagou em dois meses.",
-      avatar: "RF"
+      name: "Carlos Mendes",
+      role: "CTO",
+      company: "RetailTech Solutions",
+      content: "A SensoriAI desenvolveu nossa plataforma de análise preditiva de vendas. O time é extremamente técnico e entregou uma solução robusta e escalável que processa milhões de transações.",
+      avatar: "CM"
     },
     {
-      name: "Marina Costa",
-      role: "Engenheira Agrônoma",
-      company: "AgroTech Consultoria",
-      content: "Atendemos 15 propriedades e a SensoriAI se tornou nossa principal ferramenta de diagnóstico. Os relatórios de IA economizam horas de trabalho.",
-      avatar: "MC"
+      name: "Ana Paula Silva",
+      role: "Diretora de TI",
+      company: "LogiMove",
+      content: "Contratamos o squad dedicado para modernizar nossos sistemas de logística. Em 6 meses tínhamos uma plataforma completa com IA para otimização de rotas. Excelente comunicação e qualidade de código.",
+      avatar: "AS"
     },
     {
-      name: "João Almeida",
-      role: "Produtor Rural",
-      company: "Sítio Boa Vista",
-      content: "Finalmente consigo ver o que está acontecendo em cada talhão sem precisar percorrer a propriedade toda. A visão integrada mudou minha forma de gerir.",
-      avatar: "JA"
+      name: "Ricardo Santos",
+      role: "Fundador",
+      company: "AgriSmart",
+      content: "Trabalhamos com a SensoriAI desde o MVP até a escala. A expertise em IA aplicada ao agronegócio foi fundamental para chegarmos onde estamos hoje. Parceria de longo prazo garantida.",
+      avatar: "RS"
     }
   ];
 
   const stats = [
-    { value: "50.000+", label: "Hectares Monitorados" },
-    { value: "300+", label: "Produtores Ativos" },
-    { value: "15", label: "Estados Atendidos" },
+    { value: "50+", label: "Projetos Entregues" },
+    { value: "20+", label: "Clientes Ativos" },
+    { value: "5", label: "Setores Atendidos" },
     { value: "98%", label: "Satisfação dos Clientes" }
   ];
 
@@ -128,22 +129,22 @@ const Index = () => {
       {/* Header/Navigation */}
       <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Leaf className="h-6 w-6 text-primary" />
+          <div className="flex items-center gap-3">
+            <img src="/favicon.png" alt="SensoriAI" className="h-8 w-8" />
             <span className="text-xl font-bold text-foreground">SensoriAI</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
-            <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Funcionalidades
+            <a href="#solutions" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Soluções
             </a>
-            <a href="#plans" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Planos
+            <a href="#cases" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Casos de Uso
             </a>
             <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Sobre
             </a>
             <Button onClick={() => navigate('/dashboard')} variant="outline" size="sm">
-              Acessar Plataforma
+              Ver Demonstração
             </Button>
           </nav>
         </div>
@@ -153,23 +154,26 @@ const Index = () => {
       <section className="container py-20 md:py-32 animate-fade-in">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
           <div className="space-y-6">
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/favicon.png" alt="SensoriAI Logo" className="h-16 w-16" />
+            </div>
             <Badge variant="secondary" className="w-fit">
-              <Zap className="h-3 w-3 mr-1" />
-              Agricultura de Precisão
+              <Brain className="h-3 w-3 mr-1" />
+              Inteligência Artificial + Desenvolvimento de Software
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
-              Inteligência Agrícola que Multiplica seus Resultados
+              Transformamos Dados em Soluções Inteligentes
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl">
-              Transforme dados de satélite em decisões estratégicas. Monitore vigor, detecte plantas daninhas e otimize sua operação com IA agronômica.
+              Especialistas em desenvolver plataformas escaláveis com Inteligência Artificial aplicada a diversos setores. Criamos sistemas que resolvem problemas reais e crescem com seu negócio.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-base" onClick={() => navigate('/dashboard')}>
-                Começar Agora
+              <Button size="lg" className="text-base" onClick={() => document.getElementById('cases')?.scrollIntoView({ behavior: 'smooth' })}>
+                Ver Nossas Soluções
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button size="lg" variant="outline" className="text-base" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-                Solicitar Demonstração
+                Falar com Especialista
               </Button>
             </div>
           </div>
@@ -177,16 +181,16 @@ const Index = () => {
             <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 p-8 flex items-center justify-center">
               <div className="grid grid-cols-2 gap-4 w-full">
                 <Card className="p-4 space-y-2 hover:scale-105 transition-transform">
-                  <Satellite className="h-8 w-8 text-primary" />
-                  <p className="text-sm font-semibold">Mapas HD</p>
+                  <Brain className="h-8 w-8 text-primary" />
+                  <p className="text-sm font-semibold">IA Avançada</p>
                 </Card>
                 <Card className="p-4 space-y-2 hover:scale-105 transition-transform">
-                  <Brain className="h-8 w-8 text-secondary" />
-                  <p className="text-sm font-semibold">IA Agronômica</p>
+                  <Cpu className="h-8 w-8 text-secondary" />
+                  <p className="text-sm font-semibold">Plataformas</p>
                 </Card>
                 <Card className="p-4 space-y-2 hover:scale-105 transition-transform">
-                  <BarChart3 className="h-8 w-8 text-accent" />
-                  <p className="text-sm font-semibold">Análises</p>
+                  <Zap className="h-8 w-8 text-accent" />
+                  <p className="text-sm font-semibold">Escalável</p>
                 </Card>
                 <Card className="p-4 space-y-2 hover:scale-105 transition-transform">
                   <Shield className="h-8 w-8 text-success" />
@@ -198,32 +202,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Dashboard Access Section */}
-      <section className="bg-primary/5 py-12 border-y border-border animate-fade-in">
-        <div className="container">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="space-y-2 text-center md:text-left">
-              <h3 className="text-2xl font-bold text-foreground">Já é cliente?</h3>
-              <p className="text-muted-foreground max-w-2xl">
-                Acesse sua conta para visualizar mapas detalhados, análises de talhões e relatórios operacionais da sua propriedade.
-              </p>
-            </div>
-            <Button size="lg" onClick={() => navigate('/dashboard')} className="shrink-0">
-              <Users className="mr-2 h-5 w-5" />
-              Acessar Dashboard
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section id="features" className="container py-20 animate-fade-in">
+      {/* Solutions Section */}
+      <section id="solutions" className="container py-20 animate-fade-in">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Tecnologia que Impulsiona o Agronegócio
+            Nossas Capacidades
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Ferramentas completas para monitoramento, análise e gestão inteligente da sua lavoura
+            Desenvolvemos soluções completas de software com IA integrada para diversos setores
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -236,6 +222,76 @@ const Index = () => {
               <p className="text-sm text-muted-foreground">{feature.description}</p>
             </Card>
           ))}
+        </div>
+      </section>
+
+      {/* Use Case Section - Agricultural Platform */}
+      <section id="cases" className="bg-primary/5 py-20 border-y border-border animate-fade-in">
+        <div className="container">
+          <div className="text-center space-y-4 mb-12">
+            <Badge variant="secondary" className="mx-auto w-fit">
+              <Leaf className="h-3 w-3 mr-1" />
+              Caso de Uso: Agronegócio
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Plataforma de Análise Agrícola com IA
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Uma das nossas soluções: sistema completo de monitoramento e análise para propriedades rurais usando IA e dados de satélite
+            </p>
+          </div>
+          <div className="grid gap-8 lg:grid-cols-2 items-center">
+            <div className="space-y-6">
+              <div className="grid grid-cols-2 gap-4">
+                <Card className="p-4 space-y-2">
+                  <Satellite className="h-6 w-6 text-primary" />
+                  <h4 className="font-semibold text-sm">Mapas de Vigor</h4>
+                  <p className="text-xs text-muted-foreground">Análise de saúde das plantas</p>
+                </Card>
+                <Card className="p-4 space-y-2">
+                  <Brain className="h-6 w-6 text-secondary" />
+                  <h4 className="font-semibold text-sm">Detecção de Daninhas</h4>
+                  <p className="text-xs text-muted-foreground">IA identifica infestações</p>
+                </Card>
+                <Card className="p-4 space-y-2">
+                  <BarChart3 className="h-6 w-6 text-accent" />
+                  <h4 className="font-semibold text-sm">Relatórios Automáticos</h4>
+                  <p className="text-xs text-muted-foreground">Insights gerados por IA</p>
+                </Card>
+                <Card className="p-4 space-y-2">
+                  <TrendingDown className="h-6 w-6 text-success" />
+                  <h4 className="font-semibold text-sm">Redução de Custos</h4>
+                  <p className="text-xs text-muted-foreground">Até 30% de economia</p>
+                </Card>
+              </div>
+              <div className="space-y-3">
+                <h3 className="text-xl font-semibold text-foreground">Resultados da Solução</h3>
+                {[
+                  "50.000+ hectares monitorados ativamente",
+                  "Redução média de 28% em custos com defensivos",
+                  "Decisões 3x mais rápidas com análise de IA",
+                  "Plataforma escalável de startup a grandes fazendas"
+                ].map((impact, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-success shrink-0 mt-0.5" />
+                    <p className="text-sm text-muted-foreground">{impact}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="space-y-4">
+              <Card className="p-6 space-y-4">
+                <h3 className="text-lg font-semibold text-foreground">Ver a Plataforma em Ação</h3>
+                <p className="text-sm text-muted-foreground">
+                  Explore nossa plataforma de análise agrícola e veja como aplicamos IA para resolver problemas reais do agronegócio.
+                </p>
+                <Button size="lg" onClick={() => navigate('/dashboard')} className="w-full">
+                  <Satellite className="mr-2 h-5 w-5" />
+                  Acessar Demonstração
+                </Button>
+              </Card>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -262,28 +318,30 @@ const Index = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p className="text-base">
-                <strong className="text-foreground">Nossa Missão:</strong> Democratizar o acesso à agricultura de precisão, oferecendo tecnologia de ponta para produtores de todos os portes.
+                <strong className="text-foreground">Nossa Missão:</strong> Desenvolver soluções tecnológicas de alta qualidade com Inteligência Artificial que resolvem problemas reais e agregam valor aos negócios de nossos clientes.
               </p>
               <p className="text-base">
-                <strong className="text-foreground">Nossa Visão:</strong> Ser a principal plataforma de inteligência agrícola da América Latina, conectando dados, pessoas e decisões estratégicas.
+                <strong className="text-foreground">Nossa Visão:</strong> Ser referência em desenvolvimento de plataformas inteligentes e escaláveis, reconhecida pela excelência técnica e impacto gerado em diversos setores.
               </p>
               <p className="text-base">
-                <strong className="text-foreground">Nossos Valores:</strong> Inovação contínua, compromisso com resultados reais, transparência na comunicação e respeito ao meio ambiente.
+                <strong className="text-foreground">Nossos Valores:</strong> Inovação contínua, compromisso com resultados, transparência na comunicação, código de qualidade e foco na experiência do usuário.
               </p>
             </div>
           </div>
           <Card className="p-8 space-y-6">
-            <h3 className="text-xl font-semibold text-foreground">Nosso Impacto</h3>
+            <h3 className="text-xl font-semibold text-foreground">Nossa Expertise</h3>
             <div className="space-y-4">
               {[
-                "Redução média de 28% em custos com defensivos",
-                "Aumento de 15% na produtividade média",
-                "Economia de 40 horas/mês em gestão operacional",
-                "Decisões 3x mais rápidas com IA"
-              ].map((impact, index) => (
+                "IA e Machine Learning aplicados a negócios",
+                "Desenvolvimento de plataformas web escaláveis",
+                "Integração de sistemas e APIs",
+                "Análise de dados e visualização inteligente",
+                "Arquitetura de software moderna e sustentável",
+                "Soluções customizadas para diversos setores"
+              ].map((expertise, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-success shrink-0 mt-0.5" />
-                  <p className="text-sm text-muted-foreground">{impact}</p>
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <p className="text-sm text-muted-foreground">{expertise}</p>
                 </div>
               ))}
             </div>
@@ -291,15 +349,15 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Plans Section */}
-      <section id="plans" className="bg-muted/50 py-20 animate-fade-in">
+      {/* Services Section */}
+      <section className="bg-muted/50 py-20 animate-fade-in">
         <div className="container">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Planos para Cada Necessidade
+              Como Trabalhamos
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Escolha o plano ideal para o tamanho da sua operação
+              Modelos de desenvolvimento adaptados às suas necessidades
             </p>
           </div>
           <div className="grid gap-6 lg:grid-cols-3">
@@ -330,8 +388,8 @@ const Index = () => {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full" variant={plan.featured ? "default" : "outline"}>
-                  {plan.price === "Sob consulta" ? "Falar com Vendas" : "Testar Agora"}
+                <Button className="w-full" variant={plan.featured ? "default" : "outline"} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+                  Solicitar Orçamento
                 </Button>
               </Card>
             ))}
@@ -339,42 +397,42 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Integrations Section */}
+      {/* Technology Stack Section */}
       <section className="container py-20 animate-fade-in">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Integração Completa
+            Stack Tecnológica Moderna
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Conecte sensores, drones, APIs e sistemas externos em uma única plataforma
+            Utilizamos as melhores tecnologias do mercado para construir soluções robustas e escaláveis
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           <Card className="p-6 space-y-4 text-center">
             <div className="h-12 w-12 rounded-lg bg-secondary/10 flex items-center justify-center mx-auto">
-              <Database className="h-6 w-6 text-secondary" />
+              <Brain className="h-6 w-6 text-secondary" />
             </div>
-            <h3 className="text-lg font-semibold text-foreground">Dados Multi-fonte</h3>
+            <h3 className="text-lg font-semibold text-foreground">IA e Machine Learning</h3>
             <p className="text-sm text-muted-foreground">
-              Imagens de satélite, drones, sensores de solo e estações meteorológicas
+              TensorFlow, PyTorch, OpenAI, modelos customizados e pipelines de treinamento
             </p>
           </Card>
           <Card className="p-6 space-y-4 text-center">
             <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center mx-auto">
               <Cpu className="h-6 w-6 text-accent" />
             </div>
-            <h3 className="text-lg font-semibold text-foreground">IA Especializada</h3>
+            <h3 className="text-lg font-semibold text-foreground">Backend e Cloud</h3>
             <p className="text-sm text-muted-foreground">
-              Modelos de machine learning treinados especificamente para agricultura
+              Node.js, Python, PostgreSQL, MongoDB, AWS, GCP, arquitetura de microsserviços
             </p>
           </Card>
           <Card className="p-6 space-y-4 text-center">
             <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
               <Zap className="h-6 w-6 text-primary" />
             </div>
-            <h3 className="text-lg font-semibold text-foreground">API Aberta</h3>
+            <h3 className="text-lg font-semibold text-foreground">Frontend Moderno</h3>
             <p className="text-sm text-muted-foreground">
-              Integre com ERPs, sistemas de gestão e outras ferramentas da sua operação
+              React, TypeScript, Next.js, Tailwind CSS, componentes reutilizáveis e responsivos
             </p>
           </Card>
         </div>
@@ -385,15 +443,16 @@ const Index = () => {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <Lock className="h-12 w-12 text-primary mx-auto" />
-            <h2 className="text-3xl font-bold text-foreground">Segurança e Privacidade</h2>
+            <h2 className="text-3xl font-bold text-foreground">Segurança e Qualidade</h2>
             <p className="text-muted-foreground">
-              Seus dados agrícolas são protegidos com criptografia de ponta a ponta, autenticação avançada e conformidade com LGPD. Servidores em nuvem redundantes garantem disponibilidade 24/7 e backups automáticos diários.
+              Seguimos as melhores práticas de segurança e desenvolvimento. Código limpo, testes automatizados, revisão de código, CI/CD, monitoramento contínuo e conformidade com LGPD. Construímos sistemas confiáveis que você pode escalar com tranquilidade.
             </p>
             <div className="flex flex-wrap justify-center gap-4 pt-4">
-              <Badge variant="secondary">ISO 27001</Badge>
+              <Badge variant="secondary">Clean Code</Badge>
               <Badge variant="secondary">LGPD Compliant</Badge>
-              <Badge variant="secondary">SSL/TLS</Badge>
-              <Badge variant="secondary">Backup Diário</Badge>
+              <Badge variant="secondary">CI/CD</Badge>
+              <Badge variant="secondary">Code Review</Badge>
+              <Badge variant="secondary">Testes Automatizados</Badge>
             </div>
           </div>
         </div>
@@ -406,7 +465,7 @@ const Index = () => {
             O Que Nossos Clientes Dizem
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Histórias reais de quem transformou a gestão da lavoura com a SensoriAI
+            Feedback de empresas que confiaram em nossas soluções tecnológicas
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
@@ -434,16 +493,29 @@ const Index = () => {
       </section>
 
       {/* Partners Section */}
-      <section className="bg-muted/50 py-16 animate-fade-in">
-        <div className="container text-center space-y-8">
-          <h3 className="text-2xl font-bold text-foreground">Empresas que Confiam na SensoriAI</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <Building2 className="h-8 w-8 text-muted-foreground" />
-                <span className="text-muted-foreground font-semibold">Partner {i + 1}</span>
-              </div>
-            ))}
+      <section className="bg-muted/30 py-16 animate-fade-in">
+        <div className="container">
+          <div className="text-center space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-3xl font-bold text-foreground">Setores Atendidos</h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Desenvolvemos soluções para empresas de diversos segmentos
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-8">
+              {[
+                { icon: Leaf, name: "Agronegócio" },
+                { icon: Building2, name: "Varejo" },
+                { icon: Database, name: "Logística" },
+                { icon: Users, name: "Saúde" },
+                { icon: BarChart3, name: "Finanças" }
+              ].map((sector, i) => (
+                <div key={i} className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                  <sector.icon className="h-6 w-6" />
+                  <span className="text-sm font-medium">{sector.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -452,10 +524,10 @@ const Index = () => {
       <section id="contact" className="container py-20 animate-fade-in">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Entre em Contato
+            Vamos Conversar sobre seu Projeto
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Preencha o formulário e nossa equipe entrará em contato para apresentar a plataforma
+            Preencha o formulário e nossa equipe técnica entrará em contato para entender suas necessidades
           </p>
         </div>
         <ContactForm />
@@ -465,14 +537,15 @@ const Index = () => {
       <section className="bg-primary text-primary-foreground py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Comece Hoje Mesmo a Transformar sua Lavoura
+            Pronto para Desenvolver sua Próxima Solução?
           </h2>
           <p className="text-primary-foreground/90 max-w-2xl mx-auto text-lg">
-            Teste gratuitamente por 14 dias. Sem necessidade de cartão de crédito.
+            Vamos transformar sua ideia em uma plataforma robusta e escalável com Inteligência Artificial
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button size="lg" variant="secondary" onClick={() => navigate('/auth')}>
-              Começar Teste Gratuito
+            <Button size="lg" variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+              Falar com Especialista
+              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Agendar Demonstração
@@ -487,20 +560,20 @@ const Index = () => {
           <div className="grid gap-8 md:grid-cols-4">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <Leaf className="h-6 w-6 text-primary" />
+                <img src="/favicon.png" alt="SensoriAI" className="h-6 w-6" />
                 <span className="text-lg font-bold text-foreground">SensoriAI</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Inteligência agrícola que multiplica resultados no campo.
+                Especialistas em IA e desenvolvimento de software escalável para diversos setores.
               </p>
             </div>
             <div className="space-y-4">
-              <h4 className="font-semibold text-foreground">Produto</h4>
+              <h4 className="font-semibold text-foreground">Soluções</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#features" className="hover:text-foreground transition-colors">Funcionalidades</a></li>
-                <li><a href="#plans" className="hover:text-foreground transition-colors">Planos</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">Integrações</a></li>
-                <li><a href="#" className="hover:text-foreground transition-colors">API</a></li>
+                <li><a href="#solutions" className="hover:text-foreground transition-colors">Nossas Capacidades</a></li>
+                <li><a href="#cases" className="hover:text-foreground transition-colors">Casos de Uso</a></li>
+                <li><a href="/dashboard" className="hover:text-foreground transition-colors">Demonstração</a></li>
+                <li><a href="#contact" className="hover:text-foreground transition-colors">Contato</a></li>
               </ul>
             </div>
             <div className="space-y-4">
@@ -523,7 +596,7 @@ const Index = () => {
           </div>
           <div className="border-t border-border mt-8 pt-8 text-center">
             <p className="text-sm text-muted-foreground">
-              © 2025 SensoriAI Agro Insight. Todos os direitos reservados.
+              © 2025 SensoriAI. Todos os direitos reservados.
             </p>
           </div>
         </div>
