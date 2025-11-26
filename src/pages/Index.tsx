@@ -21,7 +21,10 @@ import {
   Sparkles,
   TrendingUp,
   Search,
-  Activity
+  Activity,
+  Play,
+  Quote,
+  ArrowLeftRight
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { ContactForm } from "@/components/ContactForm";
@@ -514,6 +517,263 @@ const Index = () => {
             className="text-base font-semibold group px-8"
           >
             Ver a Diferença na Prática
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
+        </div>
+      </section>
+
+      {/* Video Testimonials Section */}
+      <section className="container py-20 animate-fade-in">
+        <div className="text-center space-y-4 mb-12">
+          <Badge variant="secondary" className="mb-4">
+            <Quote className="h-3 w-3 mr-1" />
+            Depoimentos de Clientes
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            Veja o que nossos clientes têm a dizer
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Resultados reais de quem já está utilizando a plataforma SensoriAI em suas operações
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {/* Video Testimonial 1 */}
+          <Card className="overflow-hidden group cursor-pointer hover:shadow-xl transition-all animate-fade-in" style={{ animationDelay: '0ms' }}>
+            <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors" />
+              <Play className="h-16 w-16 text-primary group-hover:scale-110 transition-transform" />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p className="text-white text-sm font-semibold">João Silva - Fazenda Santa Clara</p>
+              </div>
+            </div>
+            <div className="p-6 space-y-3">
+              <div className="flex gap-1 mb-2">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-sm text-muted-foreground">
+                "Reduzimos 32% dos custos com defensivos no primeiro ano. A precisão da análise de IA é impressionante."
+              </p>
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <MapPin className="h-3 w-3" />
+                <span>Mato Grosso • 2.500 hectares</span>
+              </div>
+            </div>
+          </Card>
+
+          {/* Video Testimonial 2 */}
+          <Card className="overflow-hidden group cursor-pointer hover:shadow-xl transition-all animate-fade-in" style={{ animationDelay: '100ms' }}>
+            <div className="relative aspect-video bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors" />
+              <Play className="h-16 w-16 text-secondary group-hover:scale-110 transition-transform" />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p className="text-white text-sm font-semibold">Maria Oliveira - AgroTech Sul</p>
+              </div>
+            </div>
+            <div className="p-6 space-y-3">
+              <div className="flex gap-1 mb-2">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-sm text-muted-foreground">
+                "Conseguimos identificar problemas 2 semanas antes do que identificávamos manualmente. Isso salvou nossa safra."
+              </p>
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <MapPin className="h-3 w-3" />
+                <span>Goiás • 4.200 hectares</span>
+              </div>
+            </div>
+          </Card>
+
+          {/* Video Testimonial 3 */}
+          <Card className="overflow-hidden group cursor-pointer hover:shadow-xl transition-all animate-fade-in" style={{ animationDelay: '200ms' }}>
+            <div className="relative aspect-video bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors" />
+              <Play className="h-16 w-16 text-accent group-hover:scale-110 transition-transform" />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p className="text-white text-sm font-semibold">Carlos Mendes - Grupo Agrícola CM</p>
+              </div>
+            </div>
+            <div className="p-6 space-y-3">
+              <div className="flex gap-1 mb-2">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-sm text-muted-foreground">
+                "A plataforma escala perfeitamente. Gerenciamos 5 fazendas diferentes de um único dashboard com dados em tempo real."
+              </p>
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <MapPin className="h-3 w-3" />
+                <span>Bahia • 8.500 hectares</span>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </section>
+
+      {/* Before/After Gallery Section */}
+      <section className="container py-20 animate-fade-in bg-muted/20">
+        <div className="text-center space-y-4 mb-12">
+          <Badge variant="secondary" className="mb-4">
+            <ArrowLeftRight className="h-3 w-3 mr-1" />
+            Análises Reais
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            Veja a tecnologia em ação
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Comparações lado a lado de análises reais realizadas pela nossa plataforma
+          </p>
+        </div>
+
+        <div className="space-y-8 max-w-6xl mx-auto">
+          {/* Comparison 1 - Vigor Map */}
+          <Card className="overflow-hidden animate-fade-in" style={{ animationDelay: '0ms' }}>
+            <div className="p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Leaf className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground">Mapa de Vigor NDVI</h3>
+                  <p className="text-sm text-muted-foreground">Análise de saúde vegetal - Fazenda São João, MT</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Badge variant="outline" className="mb-2">Antes - Imagem de Satélite</Badge>
+                  <div className="aspect-video bg-gradient-to-br from-muted to-muted-foreground/20 rounded-lg flex items-center justify-center border-2 border-border">
+                    <div className="text-center space-y-2 p-6">
+                      <Satellite className="h-12 w-12 text-muted-foreground mx-auto" />
+                      <p className="text-sm text-muted-foreground">Imagem RGB capturada por satélite</p>
+                      <p className="text-xs text-muted-foreground">Difícil identificar problemas visualmente</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-2">
+                  <Badge variant="default" className="mb-2 bg-success text-success-foreground">Depois - Análise de IA</Badge>
+                  <div className="aspect-video bg-gradient-to-br from-success/20 via-yellow-500/20 to-destructive/20 rounded-lg flex items-center justify-center border-2 border-success">
+                    <div className="text-center space-y-2 p-6">
+                      <Brain className="h-12 w-12 text-success mx-auto" />
+                      <p className="text-sm font-semibold text-foreground">Mapa NDVI processado</p>
+                      <p className="text-xs text-muted-foreground">Verde = saudável | Amarelo = atenção | Vermelho = problema</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-4 p-4 bg-success/10 rounded-lg border border-success/20">
+                <p className="text-sm text-foreground">
+                  <strong>Resultado:</strong> Identificados 3 setores com baixo vigor (12% da área total). Aplicação direcionada economizou R$ 18.400 em fertilizantes.
+                </p>
+              </div>
+            </div>
+          </Card>
+
+          {/* Comparison 2 - Weed Detection */}
+          <Card className="overflow-hidden animate-fade-in" style={{ animationDelay: '100ms' }}>
+            <div className="p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-10 w-10 rounded-lg bg-destructive/10 flex items-center justify-center">
+                  <Search className="h-5 w-5 text-destructive" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground">Detecção de Daninhas</h3>
+                  <p className="text-sm text-muted-foreground">Identificação por IA - Fazenda Boa Vista, GO</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Badge variant="outline" className="mb-2">Antes - Visão Manual</Badge>
+                  <div className="aspect-video bg-gradient-to-br from-green-900/30 to-green-700/30 rounded-lg flex items-center justify-center border-2 border-border">
+                    <div className="text-center space-y-2 p-6">
+                      <Users className="h-12 w-12 text-muted-foreground mx-auto" />
+                      <p className="text-sm text-muted-foreground">Inspeção a pé leva dias</p>
+                      <p className="text-xs text-muted-foreground">Pontos de infestação podem passar despercebidos</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-2">
+                  <Badge variant="default" className="mb-2 bg-destructive text-destructive-foreground">Depois - IA em Ação</Badge>
+                  <div className="aspect-video bg-gradient-to-br from-green-600/30 via-yellow-600/30 to-red-600/30 rounded-lg flex items-center justify-center border-2 border-destructive">
+                    <div className="text-center space-y-2 p-6">
+                      <Activity className="h-12 w-12 text-destructive mx-auto" />
+                      <p className="text-sm font-semibold text-foreground">7 focos detectados automaticamente</p>
+                      <p className="text-xs text-muted-foreground">Análise completa em menos de 1 hora</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-4 p-4 bg-destructive/10 rounded-lg border border-destructive/20">
+                <p className="text-sm text-foreground">
+                  <strong>Resultado:</strong> 7 focos de daninhas identificados precocemente. Intervenção localizada evitou propagação para 85 hectares adicionais.
+                </p>
+              </div>
+            </div>
+          </Card>
+
+          {/* Comparison 3 - Report */}
+          <Card className="overflow-hidden animate-fade-in" style={{ animationDelay: '200ms' }}>
+            <div className="p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-10 w-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                  <BarChart3 className="h-5 w-5 text-accent" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground">Relatórios Automáticos</h3>
+                  <p className="text-sm text-muted-foreground">Geração de insights - Fazenda Esperança, BA</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Badge variant="outline" className="mb-2">Antes - Processo Manual</Badge>
+                  <div className="aspect-video bg-gradient-to-br from-muted to-muted-foreground/20 rounded-lg flex items-center justify-center border-2 border-border">
+                    <div className="text-center space-y-2 p-6">
+                      <Database className="h-12 w-12 text-muted-foreground mx-auto" />
+                      <p className="text-sm text-muted-foreground">Compilação manual de dados</p>
+                      <p className="text-xs text-muted-foreground">3-5 dias para gerar relatório completo</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-2">
+                  <Badge variant="default" className="mb-2 bg-accent text-accent-foreground">Depois - Geração Automática</Badge>
+                  <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg flex items-center justify-center border-2 border-accent">
+                    <div className="text-center space-y-2 p-6">
+                      <Sparkles className="h-12 w-12 text-accent mx-auto" />
+                      <p className="text-sm font-semibold text-foreground">Relatório completo gerado por IA</p>
+                      <p className="text-xs text-muted-foreground">Pronto em minutos com recomendações acionáveis</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-4 p-4 bg-accent/10 rounded-lg border border-accent/20">
+                <p className="text-sm text-foreground">
+                  <strong>Resultado:</strong> Relatórios semanais automatizados liberaram 20h/mês da equipe técnica para ações estratégicas. Decisões 3x mais rápidas.
+                </p>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        <div className="text-center mt-12">
+          <Button 
+            size="lg" 
+            onClick={() => navigate('/dashboard')} 
+            className="text-base font-semibold group px-8"
+          >
+            Testar com Seus Dados
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
