@@ -1,220 +1,249 @@
+// src/components/dashboard/MapVisualization.tsx
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { SectorList } from "./SectorList";
-import { GeographicMap } from "./GeographicMap";
+import GeographicMap from "./GeographicMap";
 import { toast } from "sonner";
+import { Badge } from "@/components/ui/badge";
+import { Leaf, Search, BarChart3 } from "lucide-react";
 
 interface Sector {
   id: string;
   name: string;
-  area: number;
+  area: number; // hectares
   infestationLevel: "high" | "medium" | "low";
   percentage: number;
   coordinates: { lat: number; lng: number };
 }
 
-// Coordenadas centrais da propriedade (mock - região de soja no Brasil)
-const farmCenter = { lat: -23.5505, lng: -46.6333 };
+/* === POLÍGONO REAL DO CLIENTE (do KML) === */
+export const userPolygon = [
+  { lat: -24.78306049887476, lng: -53.61900349436017 },
+  { lat: -24.77433558965578, lng: -53.61414552543608 },
+  { lat: -24.77361458711221, lng: -53.6157411438456 },
+  { lat: -24.78232624780349, lng: -53.62057096723302 },
+  { lat: -24.78306049887476, lng: -53.61900349436017 }, // fechamento
+];
 
-// Mock data - polígonos geográficos para plantas daninhas
-const mockWeedPolygons = [
+const farmCenter = { lat: -24.7792794844642, lng: -53.617692925047 };
+
+/* único conjunto de polígonos (pode expandir por aba depois) */
+const clientPolygons = [
   {
-    id: "S-001",
-    coordinates: [
-      { lat: -23.548, lng: -46.635 },
-      { lat: -23.547, lng: -46.633 },
-      { lat: -23.549, lng: -46.632 },
-      { lat: -23.550, lng: -46.634 },
-    ],
-    type: "weed" as const,
+    id: "S-USER-01",
+    coordinates: userPolygon,
+    type: "user" as const,
     severity: "high" as const,
+    name: "Área Real do Cliente",
   },
+];
+
+const clientSectorList: Sector[] = [
   {
-    id: "S-003",
-    coordinates: [
-      { lat: -23.552, lng: -46.631 },
-      { lat: -23.551, lng: -46.629 },
-      { lat: -23.553, lng: -46.628 },
-      { lat: -23.554, lng: -46.630 },
-    ],
-    type: "weed" as const,
-    severity: "medium" as const,
-  },
-  {
-    id: "S-007",
-    coordinates: [
-      { lat: -23.549, lng: -46.637 },
-      { lat: -23.548, lng: -46.636 },
-      { lat: -23.550, lng: -46.635 },
-      { lat: -23.551, lng: -46.636 },
-    ],
-    type: "weed" as const,
-    severity: "low" as const,
+    id: "S-USER-01",
+    name: "Área Real do Cliente",
+    area: 19.4353,
+    infestationLevel: "high",
+    percentage: 100,
+    coordinates: farmCenter,
   },
 ];
 
-// Mock data - polígonos geográficos para falhas de plantio
-const mockFailurePolygons = [
-  {
-    id: "S-002",
-    coordinates: [
-      { lat: -23.551, lng: -46.634 },
-      { lat: -23.550, lng: -46.632 },
-      { lat: -23.552, lng: -46.631 },
-      { lat: -23.553, lng: -46.633 },
-    ],
-    type: "failure" as const,
-    severity: "high" as const,
-  },
-  {
-    id: "S-005",
-    coordinates: [
-      { lat: -23.553, lng: -46.636 },
-      { lat: -23.552, lng: -46.635 },
-      { lat: -23.554, lng: -46.634 },
-      { lat: -23.555, lng: -46.635 },
-    ],
-    type: "failure" as const,
-    severity: "medium" as const,
-  },
-];
+export const MapVisualization: React.FC = () => {
+  const [selectedSector, setSelectedSector] = useState<Sector | null>({
+    id: "S-USER-01",
+    name: "Área Real do Cliente",
+    area: 19.4353,
+    infestationLevel: "high",
+    percentage: 100,
+    coordinates: farmCenter,
+  });
 
-// Mock data - setores para a lista lateral
-const mockWeedSectors: Sector[] = [
-  { id: "S-001", name: "Setor A-1", area: 12.5, infestationLevel: "high", percentage: 32.5, coordinates: { lat: -23.5490, lng: -46.6335 } },
-  { id: "S-003", name: "Setor A-2", area: 8.3, infestationLevel: "medium", percentage: 18.2, coordinates: { lat: -23.5525, lng: -46.6295 } },
-  { id: "S-007", name: "Setor B-1", area: 15.7, infestationLevel: "high", percentage: 28.9, coordinates: { lat: -23.5500, lng: -46.6360 } },
-];
-
-const mockFailureSectors: Sector[] = [
-  { id: "S-002", name: "Setor D-1", area: 5.2, infestationLevel: "medium", percentage: 15.3, coordinates: { lat: -23.5515, lng: -46.6325 } },
-  { id: "S-005", name: "Setor D-2", area: 7.8, infestationLevel: "high", percentage: 24.8, coordinates: { lat: -23.5535, lng: -46.6355 } },
-];
-
-const mockVigorSectors: Sector[] = [
-  { id: "v1", name: "Setor F-1", area: 18.3, infestationLevel: "high", percentage: 82.5, coordinates: { lat: -23.5505, lng: -46.6333 } },
-  { id: "v2", name: "Setor F-2", area: 14.7, infestationLevel: "medium", percentage: 65.3, coordinates: { lat: -23.5515, lng: -46.6343 } },
-  { id: "v3", name: "Setor G-1", area: 9.2, infestationLevel: "low", percentage: 42.8, coordinates: { lat: -23.5525, lng: -46.6353 } },
-  { id: "v4", name: "Setor G-2", area: 16.5, infestationLevel: "high", percentage: 78.9, coordinates: { lat: -23.5535, lng: -46.6363 } },
-  { id: "v5", name: "Setor H-1", area: 12.1, infestationLevel: "medium", percentage: 58.4, coordinates: { lat: -23.5545, lng: -46.6373 } },
-];
-
-export const MapVisualization = () => {
-  const [selectedSector, setSelectedSector] = useState<Sector | null>(null);
-  const [activeTab, setActiveTab] = useState("weeds");
+  const [activeTab, setActiveTab] = useState<string>("weeds");
 
   const handleSectorClick = (sector: Sector) => {
     setSelectedSector(sector);
-    toast.success(`Focando no ${sector.name}`, {
-      description: `Área: ${sector.area.toFixed(2)} ha | Nível: ${sector.infestationLevel}`,
+    toast.success(`Focando em ${sector.name}`, {
+      description: `Área: ${sector.area.toFixed(2)} ha`,
     });
   };
 
-  const getSectorsForTab = () => {
-    switch (activeTab) {
-      case "weeds":
-        return mockWeedSectors;
-      case "failures":
-        return mockFailureSectors;
-      case "vigor":
-        return mockVigorSectors;
-      default:
-        return [];
-    }
-  };
-
   return (
-    <Card className="col-span-full">
-      <CardHeader>
-        <CardTitle>Visualização Georreferenciada</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <Tabs defaultValue="weeds" className="w-full" onValueChange={setActiveTab}>
-          <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="weeds">Plantas Daninhas</TabsTrigger>
-            <TabsTrigger value="failures">Falhas de Plantio</TabsTrigger>
-            <TabsTrigger value="vigor">Mapa de Vigor</TabsTrigger>
-          </TabsList>
+    <div className="space-y-6">
+      {/* === MAPA PRINCIPAL (TOPO) === */}
+      <Card className="col-span-full">
+        <CardHeader>
+          <CardTitle>Visualização Georreferenciada</CardTitle>
+        </CardHeader>
 
-          <TabsContent value="weeds" className="mt-4">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-              <div className="lg:col-span-2">
-                <GeographicMap 
-                  polygons={mockWeedPolygons}
-                  selectedSectorId={selectedSector?.id}
-                  center={farmCenter}
-                />
-              </div>
-              <div>
+        <CardContent>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            {/* Mapa ocupa 2/3 */}
+            <div className="lg:col-span-2">
+              <GeographicMap
+                polygons={clientPolygons}
+                selectedSectorId={selectedSector?.id}
+                center={farmCenter}
+                zoom={17}
+                height="520px"
+              />
+            </div>
+
+            {/* Lista lateral (setores) */}
+            <div>
+              <div className="p-4">
+                <h4 className="text-sm font-semibold text-foreground mb-2">Setores com Infestação</h4>
+                <p className="text-xs text-muted-foreground mb-4">{clientSectorList.length} setores identificados</p>
                 <SectorList
-                  sectors={mockWeedSectors}
+                  sectors={clientSectorList}
                   onSectorClick={handleSectorClick}
                   selectedSectorId={selectedSector?.id}
                   type="weeds"
                 />
               </div>
             </div>
-          </TabsContent>
+          </div>
+        </CardContent>
+      </Card>
 
-          <TabsContent value="failures" className="mt-4">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-              <div className="lg:col-span-2">
-                <GeographicMap 
-                  polygons={mockFailurePolygons}
-                  selectedSectorId={selectedSector?.id}
-                  center={farmCenter}
-                />
-              </div>
-              <div>
-                <SectorList
-                  sectors={mockFailureSectors}
-                  onSectorClick={handleSectorClick}
-                  selectedSectorId={selectedSector?.id}
-                  type="failures"
-                />
-              </div>
-            </div>
-          </TabsContent>
+      {/* === ABAS COM OS CARDS ABAIXO (sem mapas) === */}
+      <Card className="col-span-full">
+        <CardContent>
+          <Tabs defaultValue={activeTab} onValueChange={setActiveTab} className="w-full">
+            <TabsList className="grid w-full grid-cols-3">
+              <TabsTrigger value="weeds">Plantas Daninhas</TabsTrigger>
+              <TabsTrigger value="failures">Falhas de Plantio</TabsTrigger>
+              <TabsTrigger value="vigor">Mapa de Vigor</TabsTrigger>
+            </TabsList>
 
-          <TabsContent value="vigor" className="mt-4">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-              <div className="lg:col-span-2">
-                <div className="relative w-full h-[400px] bg-muted rounded-lg overflow-hidden border border-border">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center space-y-2">
-                      <p className="text-sm text-muted-foreground font-semibold">
-                        Mapa de Vigor da Cultura
-                      </p>
-                      {selectedSector && (
-                        <div className="mt-4 p-4 bg-card rounded-lg border border-primary">
-                          <p className="text-xs text-primary font-semibold">
-                            📍 Focado em: {selectedSector.name}
-                          </p>
-                          <p className="text-xs text-muted-foreground mt-1">
-                            Lat: {selectedSector.coordinates.lat.toFixed(4)}, Lng: {selectedSector.coordinates.lng.toFixed(4)}
-                          </p>
-                        </div>
-                      )}
-                      <p className="text-xs text-muted-foreground">
-                        Análise de vigor: alto, médio e baixo
-                      </p>
+            {/* WEEDS tab */}
+            <TabsContent value="weeds" className="mt-4">
+              <Card className="overflow-hidden animate-fade-in">
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="h-10 w-10 rounded-lg bg-destructive/10 flex items-center justify-center">
+                      <Search className="h-5 w-5 text-destructive" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground">Detecção de Daninhas</h3>
+                      <p className="text-sm text-muted-foreground">Comparação antes/depois - Fazenda Boa Vista, GO</p>
                     </div>
                   </div>
+
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Badge variant="outline" className="mb-2">Antes - Imagem bruta</Badge>
+                      <div className="aspect-video rounded-lg overflow-hidden border border-border shadow-sm">
+                        <img src="/images/weed-before.png" alt="Antes - Lavoura" className="w-full h-full object-cover" />
+                      </div>
+                      <p className="text-xs text-muted-foreground text-center mt-1">Imagem original da lavoura sem marcações</p>
+                    </div>
+
+                    <div className="space-y-2">
+                      <Badge variant="default" className="mb-2 bg-destructive text-destructive-foreground">Depois - IA</Badge>
+                      <div className="aspect-video rounded-lg overflow-hidden border-2 border-destructive shadow-sm">
+                        <img src="/images/weed-after.png" alt="Depois - Deteção IA" className="w-full h-full object-cover" />
+                      </div>
+                      <p className="text-xs text-muted-foreground text-center mt-1">IA realça focos de infestação e áreas de atenção</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 p-4 bg-destructive/10 rounded-lg border border-destructive/20">
+                    <p className="text-sm text-foreground">
+                      <strong>Resultado:</strong> 7 focos de daninhas identificados precocemente. Intervenção localizada evitou propagação para mais de <strong>85 hectares</strong>.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <SectorList
-                  sectors={mockVigorSectors}
-                  onSectorClick={handleSectorClick}
-                  selectedSectorId={selectedSector?.id}
-                  type="vigor"
-                />
-              </div>
-            </div>
-          </TabsContent>
-        </Tabs>
-      </CardContent>
-    </Card>
+              </Card>
+            </TabsContent>
+
+            {/* FAILURES tab */}
+            <TabsContent value="failures" className="mt-4">
+              <Card className="overflow-hidden animate-fade-in">
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="h-10 w-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                      <BarChart3 className="h-5 w-5 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground">Identificação de Falhas de Plantio</h3>
+                      <p className="text-sm text-muted-foreground">Geração de insights - Fazenda Esperança, BA</p>
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Badge variant="outline" className="mb-2">Antes - Processo Manual</Badge>
+                      <div className="aspect-video rounded-lg overflow-hidden border border-border shadow-sm">
+                        <img src="/images/planting-before.png" alt="Antes - Manual" className="w-full h-full object-cover" />
+                      </div>
+                      <p className="text-xs text-muted-foreground text-center mt-1">Coleta/compilação manual de dados (3–5 dias)</p>
+                    </div>
+
+                    <div className="space-y-2">
+                      <Badge variant="default" className="mb-2 bg-accent text-accent-foreground">Depois - Geração Automática</Badge>
+                      <div className="aspect-video rounded-lg overflow-hidden border-2 border-accent shadow-sm">
+                        <img src="/images/planting-after.png" alt="Depois - IA" className="w-full h-full object-cover" />
+                      </div>
+                      <p className="text-xs text-muted-foreground text-center mt-1">Relatório gerado pela IA em minutos, com recomendações para correção</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 p-4 bg-accent/10 rounded-lg border border-accent/20">
+                    <p className="text-sm text-foreground">
+                      <strong>Resultado:</strong> Relatórios automatizados liberaram ~20h/mês da equipe técnica e permitiram correções rápidas, melhorando uniformidade do plantio.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </TabsContent>
+
+            {/* VIGOR tab */}
+            <TabsContent value="vigor" className="mt-4">
+              <Card className="overflow-hidden animate-fade-in">
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <Leaf className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground">Mapa de Vigor NDVI</h3>
+                      <p className="text-sm text-muted-foreground">Análise de saúde vegetal - Fazenda São João, MT</p>
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Badge variant="outline" className="mb-2">Antes - Imagem RGB (satélite)</Badge>
+                      <div className="aspect-video rounded-lg overflow-hidden border border-border shadow-sm">
+                        <img src="/images/ndvi-before.jpg" alt="Antes - RGB" className="w-full h-full object-cover" />
+                      </div>
+                      <p className="text-xs text-muted-foreground text-center mt-1">Imagem RGB capturada por satélite</p>
+                    </div>
+
+                    <div className="space-y-2">
+                      <Badge variant="default" className="mb-2 bg-success text-success-foreground">Depois - Mapa NDVI</Badge>
+                      <div className="aspect-video rounded-lg overflow-hidden border-2 border-success shadow-sm">
+                        <img src="/images/ndvi-after.jpg" alt="Depois - NDVI" className="w-full h-full object-cover" />
+                      </div>
+                      <p className="text-xs text-muted-foreground text-center mt-1">Mapa NDVI processado pela IA — Verde = saudável, Amarelo = atenção, Vermelho = problema</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 p-4 bg-success/10 rounded-lg border border-success/20">
+                    <p className="text-sm text-foreground">
+                      <strong>Resultado:</strong> Identificados 3 setores com baixo vigor (12% da área total). Aplicação direcionada economizou R$ 18.400 em fertilizantes.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </TabsContent>
+          </Tabs>
+        </CardContent>
+      </Card>
+    </div>
   );
 };
+
+export default MapVisualization;

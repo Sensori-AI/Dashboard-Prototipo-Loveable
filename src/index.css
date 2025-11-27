@@ -2,119 +2,130 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Nova paleta oficial SensoriAI — FULL BLUE — tudo em HSL */
 
+/* BASE LIGHT THEME ------------------------------------------------- */
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 144 60% 12%;
+    --background: 210 20% 98%;
+    --foreground: 220 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 144 60% 12%;
+    --card-foreground: 220 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 144 60% 12%;
+    --popover-foreground: 220 25% 15%;
 
-    --primary: 142 76% 36%;
+    /* Azul principal da marca */
+    --primary: 200 90% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 197 71% 73%;
-    --secondary-foreground: 144 60% 12%;
+    /* Azul claro suave */
+    --secondary: 200 30% 90%;
+    --secondary-foreground: 220 25% 20%;
 
-    --muted: 142 20% 94%;
-    --muted-foreground: 144 20% 40%;
+    /* Azul neutro claro */
+    --muted: 200 25% 92%;
+    --muted-foreground: 220 20% 40%;
 
-    --accent: 38 92% 50%;
+    /* Azul vibrante para ações */
+    --accent: 210 80% 60%;
     --accent-foreground: 0 0% 100%;
 
+    /* SEM MAIS VERDE ou AMARELO */
+    --success: 200 90% 55%; /* azul de sucesso */
+    --success-foreground: 0 0% 100%;
+
+    --warning: 210 80% 60%; /* azul de aviso */
+    --warning-foreground: 0 0% 100%;
+
+    --info: 195 90% 70%;
+    --info-foreground: 220 25% 15%;
+
+    /* Erro mantém vermelho (UX padrão) */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 142 30% 88%;
-    --input: 142 30% 88%;
-    --ring: 142 76% 36%;
+    --border: 200 20% 85%;
+    --input: 200 20% 85%;
+    --ring: 200 90% 55%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 144 40% 15%;
-    --sidebar-foreground: 142 20% 90%;
-    --sidebar-primary: 142 76% 36%;
+    /* Sidebar */
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 200 20% 95%;
+    --sidebar-primary: 200 90% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 144 40% 20%;
-    --sidebar-accent-foreground: 142 20% 90%;
-    --sidebar-border: 144 30% 25%;
-    --sidebar-ring: 142 76% 36%;
+    --sidebar-accent: 220 25% 18%;
+    --sidebar-accent-foreground: 200 20% 95%;
+    --sidebar-border: 220 20% 22%;
+    --sidebar-ring: 200 90% 55%;
 
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 100%;
-    
-    --warning: 38 92% 50%;
-    --warning-foreground: 0 0% 100%;
-    
-    --info: 197 71% 73%;
-    --info-foreground: 144 60% 12%;
-
-    --chart-1: 142 76% 36%;
-    --chart-2: 197 71% 73%;
-    --chart-3: 38 92% 50%;
-    --chart-4: 144 40% 25%;
-    --chart-5: 0 84% 60%;
+    /* Charts – FULL BLUE */
+    --chart-1: 200 90% 55%;
+    --chart-2: 210 80% 60%;
+    --chart-3: 195 90% 70%;
+    --chart-4: 220 25% 40%;
+    --chart-5: 210 40% 30%;
   }
 
+  /* DARK THEME ----------------------------------------------------- */
   .dark {
-    --background: 144 40% 8%;
-    --foreground: 142 20% 95%;
+    --background: 220 25% 8%;
+    --foreground: 200 20% 95%;
 
-    --card: 144 35% 12%;
-    --card-foreground: 142 20% 95%;
+    --card: 220 25% 12%;
+    --card-foreground: 200 20% 95%;
 
-    --popover: 144 35% 12%;
-    --popover-foreground: 142 20% 95%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 200 20% 95%;
 
-    --primary: 142 76% 36%;
+    --primary: 200 90% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 197 71% 40%;
+    --secondary: 210 30% 20%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 144 30% 20%;
-    --muted-foreground: 142 20% 65%;
+    --muted: 220 30% 20%;
+    --muted-foreground: 200 20% 65%;
 
-    --accent: 38 92% 45%;
+    --accent: 210 80% 60%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 50%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 144 30% 25%;
-    --input: 144 30% 25%;
-    --ring: 142 76% 36%;
-
-    --sidebar-background: 144 45% 10%;
-    --sidebar-foreground: 142 20% 90%;
-    --sidebar-primary: 142 76% 36%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 144 40% 18%;
-    --sidebar-accent-foreground: 142 20% 90%;
-    --sidebar-border: 144 30% 20%;
-    --sidebar-ring: 142 76% 36%;
-
-    --success: 142 76% 36%;
+    /* FULL BLUE */
+    --success: 200 90% 60%; 
     --success-foreground: 0 0% 100%;
-    
-    --warning: 38 92% 45%;
+
+    --warning: 210 80% 60%;
     --warning-foreground: 0 0% 100%;
-    
-    --info: 197 71% 40%;
+
+    --info: 195 90% 60%;
     --info-foreground: 0 0% 100%;
 
-    --chart-1: 142 76% 45%;
-    --chart-2: 197 71% 55%;
-    --chart-3: 38 92% 55%;
-    --chart-4: 144 40% 35%;
-    --chart-5: 0 84% 55%;
+    /* erro mantém vermelho */
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 22%;
+    --input: 220 20% 22%;
+    --ring: 200 90% 55%;
+
+    --sidebar-background: 220 25% 6%;
+    --sidebar-foreground: 200 20% 90%;
+    --sidebar-primary: 200 90% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 25% 12%;
+    --sidebar-accent-foreground: 200 20% 90%;
+    --sidebar-border: 220 25% 15%;
+    --sidebar-ring: 200 90% 55%;
+
+    /* Charts – FULL BLUE */
+    --chart-1: 200 90% 60%;
+    --chart-2: 210 80% 65%;
+    --chart-3: 195 90% 70%;
+    --chart-4: 220 25% 40%;
+    --chart-5: 210 40% 30%;
   }
 }
 
@@ -122,7 +133,6 @@ All colors MUST be HSL.
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
   }

@@ -9,9 +9,9 @@ import { Sprout, AlertTriangle, Activity, MapPin } from "lucide-react";
 const Dashboard = () => {
   // Dados mock
   const farmInfo = {
-    consultant: "Dr. Carlos Silva",
+    consultant: "Rufer Haubricht Furtado Filho",
     crop: "Soja",
-    season: "2024/2025",
+    season: "2025-2026",
   };
 
   // Dados para gráficos
@@ -51,7 +51,7 @@ const Dashboard = () => {
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <MetricCard
             title="Área Total Mapeada"
-            value="245.3 ha"
+            value="80 ha"
             subtitle="100% da propriedade"
             icon={MapPin}
             variant="success"
